@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Урок физики 7</title>
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600&family=Rubik:wght@500;600;700&family=JetBrains+Mono:wght@500;700&display=swap">
@@ -198,6 +197,45 @@ body.boardmode .stage .nav{flex:none;margin-top:10px}
 .slide table{font-size:clamp(.95rem,2.1vh,1.7rem)}.slide td,.slide th{padding:.35em .5em}.slide .hint{font-size:clamp(.9rem,1.9vh,1.4rem)}.slide .btn.mini{font-size:clamp(.85rem,1.9vh,1.3rem);min-height:2.4em;padding:0 .8em}.slide .tag,.slide .lv{font-size:clamp(.8rem,1.8vh,1.2rem)}
 .slide .safety{margin:0;align-self:center}
 @media (max-width:900px){.slide{display:flex;flex-direction:column;overflow:auto}.slide .card{flex:none}body.boardmode .stage{overflow:auto}}
+
+/* slides */
+.sdh{display:flex;align-items:center;gap:14px;flex:none;margin-bottom:10px}
+.sdh .bn{width:2.1em;height:2.1em;border-radius:50%;background:var(--accent);color:var(--accent-fg);display:grid;place-items:center;font-family:var(--f-head);font-weight:700;font-size:clamp(1rem,2.3vh,1.5rem)}
+.sdh b{font-family:var(--f-head);font-size:clamp(1.1rem,2.6vh,1.8rem)}
+.sdh .tt{flex:1;text-align:right;color:var(--muted);font-size:clamp(.95rem,2.1vh,1.4rem)}
+.sd{flex:1;min-height:0}
+.sd.hero{display:flex;flex-direction:column;justify-content:center;gap:4vh;border-radius:14px;padding:4vh 4vw;background:linear-gradient(135deg,var(--accent-soft),var(--bg));border:2px solid var(--accent)}
+.sd-hero{display:flex;align-items:center;gap:3vw}
+.sd-hero .sdn{font-family:var(--f-head);font-weight:700;font-size:clamp(4rem,18vh,11rem);line-height:1;color:var(--accent);min-width:1.4em;text-align:center}
+.sd-hero .kicker{font-size:clamp(1rem,2.4vh,1.7rem);color:var(--muted);margin-bottom:1.2vh;letter-spacing:.04em}
+.sd-hero .h{font-family:var(--f-head);font-weight:600;font-size:clamp(1.8rem,5.6vh,4.2rem);line-height:1.12;text-wrap:balance}
+.sd-hero .meta{margin-top:2vh;font-size:clamp(1rem,2.4vh,1.7rem);color:var(--muted)}
+.sd-foot{font-size:clamp(.9rem,1.9vh,1.3rem);color:var(--muted);border-top:1px solid var(--line);padding-top:1.4vh}
+.sdh3{margin:0 0 8px;font-family:var(--f-head);font-size:clamp(.8rem,1.7vh,1.1rem);letter-spacing:.07em;text-transform:uppercase;color:var(--accent)}
+.slide.sd.c1{grid-template-columns:1fr}
+.slide.sd.c2{grid-template-columns:1fr 1fr}
+.slide.sd.c3{grid-template-columns:repeat(3,1fr)}
+.slide.sd.c12{grid-template-columns:1.2fr 1fr}
+.slide.sd.map{grid-template-columns:1fr}
+.slide.sd.sf{grid-template-rows:auto 1fr}
+.slide.sd.c1 .big{font-size:clamp(1.8rem,5.2vh,4.4rem)}
+.slide.sd.c1 .mid,.slide.sd.c1 .q{font-size:clamp(1.25rem,3.1vh,2.6rem)}
+.slide.sd.c3 .pl{font-size:clamp(1.05rem,2.4vh,2rem)}
+.slide.sd.c2 .mid,.slide.sd.c12 .mid,.slide.sd.c2 .q{font-size:clamp(1.2rem,2.9vh,2.4rem)}.slide.sd.c2 .pl,.slide.sd.c12 .pl,.slide.sd.c2 .steps{font-size:clamp(1.1rem,2.6vh,2.2rem)}
+.slide.sd.dn .mid,.slide.sd.dn .steps,.slide.sd.dn .steps li{font-size:clamp(.95rem,2.15vh,1.8rem)}.slide.sd.dn table{width:100%;font-size:clamp(.8rem,1.75vh,1.4rem)}.slide.sd.dn th,.slide.sd.dn td{padding:.3em .45em}.slide.sd.dn .card{overflow:auto}
+.terms{display:flex;flex-wrap:wrap;gap:2vh 1.6vw;align-content:center;justify-content:center;height:100%}.terms span{background:var(--accent-soft);border:2px solid var(--accent);border-radius:14px;padding:.5em 1em;font-family:var(--f-head);font-weight:600;font-size:clamp(1.5rem,4.6vh,3.6rem)}
+.pl.nk{list-style:none;padding:0}.pl.nk li{margin-bottom:.8em}.pl.nk b{color:var(--accent);border-bottom:3px solid var(--accent);padding:0 .15em}
+.slide .fig:not(.sc):not(.cl) svg{width:auto;max-width:100%;height:38vh;margin:0 auto;display:block}.slide .fig:not(.sc):not(.cl){display:flex;justify-content:center}
+.slide.s4 .fig:not(.sc):not(.cl) svg{height:24vh}.slide.s4 .fig.sc svg{max-height:21vh;width:auto;margin:0 auto}
+.slide.s4:has(>:nth-child(4)) .q{font-size:clamp(.85rem,1.85vh,1.5rem);line-height:1.3}.slide.s4:has(>:nth-child(4)) .fig:not(.sc):not(.cl) svg{height:11vh}.slide.s4:has(>:nth-child(4)) .fig.sc svg{max-height:11vh}.slide.s4:has(>:nth-child(4)) .task>.row:first-child{display:none}.slide.s4:has(>:nth-child(4)) .fig{margin:2px 0}.slide.s4:has(>:nth-child(4)) .task .row:has(.btn){display:inline-flex;margin:4px 6px 0 0}.slide.s4:has(>:nth-child(4)) .card h3{margin-bottom:2px}.slide.s4:has(>:nth-child(4)) .tag{display:none}.slide.s4:has(>:nth-child(4)) .btn{min-height:34px;padding:0 10px;font-size:.9rem}.slide.s4:has(>:nth-child(4)) .card{padding:10px 16px}.slide.s4:has(>:nth-child(4)) .card .row{margin:2px 0}
+.sd-nav{display:flex;align-items:center;gap:12px;flex:none;margin-top:10px}
+.sd-dots{flex:1 1 0;min-width:0;display:flex;gap:2px}.sd-nav .btn{flex:none}
+.sd-dots button{flex:1 1 0;min-width:0!important;width:auto;height:32px;background:transparent;border:0;padding:0;position:relative;cursor:pointer}
+.sd-dots button::after{content:'';position:absolute;left:1px;right:1px;top:11px;height:10px;border-radius:5px;background:var(--line)}
+.sd-dots button.pass::after{background:var(--accent-soft);box-shadow:inset 0 0 0 1px var(--accent)}
+.sd-dots button.on::after{background:var(--accent)}
+.sd-n{font-family:var(--f-mono);color:var(--muted);min-width:5ch;text-align:center}
+@media (max-width:900px){.slide.sd{display:flex;flex-direction:column;overflow:auto}.sd.hero{overflow:auto}.sd-hero{flex-direction:column;text-align:center}}
 /* narrow */
 @media (max-width:900px){
   .main{grid-template-columns:minmax(0,1fr) 58px;grid-template-rows:auto 1fr}
@@ -214,6 +252,7 @@ body.boardmode .stage .nav{flex:none;margin-top:10px}
 </style>
 </head><body>
 
+
 <div class="app" id="app">
   <div class="top">
     <button class="btn lessonbtn" id="btnLessons" aria-haspopup="dialog"><span class="num" id="topNum">1</span><span id="topTitle"></span></button>
@@ -224,6 +263,7 @@ body.boardmode .stage .nav{flex:none;margin-top:10px}
       <button class="btn pri" id="tGo" aria-label="start"></button>
       <button class="btn" id="tReset" aria-label="reset"></button>
     </div>
+    <button class="btn" id="btnSlides" aria-pressed="false"></button>
     <button class="btn" id="btnBoard" aria-pressed="false"></button>
     <button class="btn" id="btnFull" aria-label="fullscreen"></button>
     <div class="seg" role="group" aria-label="language"><button id="lgRu" aria-pressed="true">РУС</button><button id="lgKk" aria-pressed="false">ҚАЗ</button></div>
@@ -308,6 +348,7 @@ const ICON={
  ref:'<path d="M5 4h10a4 4 0 014 4v12H9a4 4 0 01-4-4z M9 8h6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>',
  play:'<path d="M7 4l13 8-13 8z" fill="currentColor"/>',pause:'<path d="M6 4h4v16H6zM14 4h4v16h-4z" fill="currentColor"/>',
  reset:'<path d="M4 12a8 8 0 112.6 5.9M4 5v7h7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>',
+ slides:'<rect x="3" y="5" width="18" height="11" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M7 20h10M9 9h6M9 12h4" stroke="currentColor" stroke-width="1.8" fill="none"/>',
  board:'<rect x="3" y="4" width="18" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 20h8M12 16v4" stroke="currentColor" stroke-width="1.8"/>',
  full:'<path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5" fill="none" stroke="currentColor" stroke-width="1.8"/>',
  theme:'<path d="M20 14.5A8 8 0 019.5 4 8 8 0 1020 14.5z" fill="currentColor"/>',
@@ -320,7 +361,7 @@ const ICON={
 };
 const ic=(n)=>`<svg viewBox="0 0 24 24" aria-hidden="true">${ICON[n]||''}</svg>`;
 /* ---------- state ---------- */
-const st={lang:S.get('lang','ru'),lesson:S.get('lesson',1),stage:0,theme:S.get('theme',null),board:false};
+const st={lang:S.get('lang','ru'),lesson:S.get('lesson',1),stage:0,theme:S.get('theme',null),board:false,slides:false,slide:0};
 if(st.lang!=='ru'&&st.lang!=='kk')st.lang='ru';
 const $=(id)=>document.getElementById(id);
 const L=()=>DATA[st.lang].lessons[st.lesson-1];
@@ -345,9 +386,10 @@ let wl=null;async function wake(){try{if(navigator.wakeLock&&!wl){wl=await navig
 /* ---------- render: chrome ---------- */
 function renderTop(){const l=L(),u=U();$('topNum').textContent=l.n;$('topTitle').textContent=l.topic;document.title=(st.lang==='ru'?'Урок ':'Сабақ ')+l.n;
   $('btnBoard').innerHTML=ic('board')+'<span>'+(st.board?u.boardOn:u.board)+'</span>';$('btnBoard').setAttribute('aria-pressed',st.board);$('btnBoard').classList.toggle('on',st.board);
+  $('btnSlides').innerHTML=ic('slides')+'<span>'+(st.lang==='ru'?'Слайды':'Слайдтар')+'</span>';$('btnSlides').setAttribute('aria-pressed',st.slides);$('btnSlides').classList.toggle('on',st.slides);
   $('btnFull').innerHTML=ic('full');$('btnTheme').innerHTML=ic('theme');$('tReset').innerHTML=ic('reset');
   $('lgRu').setAttribute('aria-pressed',st.lang==='ru');$('lgKk').setAttribute('aria-pressed',st.lang==='kk');
-  document.documentElement.lang=st.lang==='ru'?'ru':'kk';document.body.classList.toggle('boardmode',st.board)}
+  document.documentElement.lang=st.lang==='ru'?'ru':'kk';document.body.classList.toggle('boardmode',st.board||st.slides)}
 function stageTitle(i){const l=L(),u=U();if(i===4&&l.sor)return st.lang==='ru'?'СОР №'+l.sn:'БЖБ №'+l.sn;return u.stages[i]}
 function renderRail(){const l=L();$('rail').innerHTML=l.times.map((m,i)=>`<button class="step ${i<st.stage?'done':''}" data-stage="${i}" ${i===st.stage?'aria-current="step"':''}><span class="n">${i<st.stage?'✓':i+1}</span><b>${esc(stageTitle(i))}</b><small>${m} ${U().min}${compRail(l,i)?' · '+compRail(l,i):''}</small></button>`).join('')+'<div class="bar"><i></i></div>'}
 function renderDock(){const u=U().tools;$('dock').innerHTML=['pen','pick','light','crit','sim','ref'].map(k=>`<button class="btn" data-tool="${k}" aria-label="${esc(u[k])}">${ic(k)}<span>${esc(u[k])}</span></button>`).join('')}
@@ -492,10 +534,10 @@ function boardHtml(i){const l=L(),u=U(),M=DATA[st.lang].meta,gr=GR[l.n]||{};cons
     s=(B.safety?`<div class="safety" style="grid-area:sf"><b>${esc(u.safe)}:</b> ${fmt(B.safety)}</div>`:'')
      +bcard('lf',u.work,`<div class="mid"><b>${fmt(B.title)}</b>${B.equip?`<p><b>${esc(u.equip)}:</b> ${fmt(B.equip)}</p>`:''}<p><b>${esc(u.steps)}:</b></p>${ol(B.steps)}</div>`)+right.join('');
   }else if(i===4){const sor=l.sor,lv=[u.lvl1,u.lvl2,u.lvl3];const cs=[];
-    if(l.ex&&!sor)cs.push([u.sample,`<div class="task"><div class="q">${fmt(l.ex.q)}</div>`+reveal('rvEx',u.solution,fmt(l.ex.sol)+'<br><b>'+esc(u.answer)+':</b> '+fmt(l.ex.a))+`</div>`]);
-    l.tasks.forEach((t,k)=>cs.push([(sor?u.item+' '+(k+1):u.task+' '+(k+1)),`<div class="task"><div class="row"><span class="lv">${k+1}</span><span class="tag">${sor?esc(u.noHint):esc(lv[k])}</span></div><div class="q">${fmt(t.q)}</div>${figs((gr.t&&gr.t[k]||{}).q)}`
+    if(l.ex&&!sor)cs.push([u.sample,`<div class="task"><div class="q">${fmt(l.ex.q)}</div>${sk(l.n,'e')}`+reveal('rvEx',u.solution,fmt(l.ex.sol)+'<br><b>'+esc(u.answer)+':</b> '+fmt(l.ex.a))+`</div>`]);
+    l.tasks.forEach((t,k)=>cs.push([(sor?u.item+' '+(k+1):u.task+' '+(k+1)),`<div class="task"><div class="row"><span class="lv">${k+1}</span><span class="tag">${sor?esc(u.noHint):esc(lv[k])}</span></div><div class="q">${fmt(t.q)}</div>${(gr.t&&gr.t[k]||{}).q?'':sk(l.n,k+1)}${figs((gr.t&&gr.t[k]||{}).q)}`
         +(t.hint&&!sor?reveal('rvH'+k,u.hints,fmt(t.hint)):'')+reveal('rvS'+k,u.showA,fmt(t.sol)+'<br><b>'+esc(u.answer)+':</b> '+fmt(t.a)+figs((gr.t&&gr.t[k]||{}).sol))+`</div>`]));
-    if(l.ch&&!sor)cs.push([u.challenge,`<div class="task"><div class="q">${fmt(l.ch.q)}</div>`+reveal('rvC',u.showA,fmt(l.ch.ans))+`</div>`]);
+    if(l.ch&&!sor)cs.push([u.challenge,`<div class="task"><div class="q">${fmt(l.ch.q)}</div>${sk(l.n,'c')}`+reveal('rvC',u.showA,fmt(l.ch.ans))+`</div>`]);
     cls='s4 c'+cs.length;s=cs.map((c,k)=>bcard('',c[0],c[1])).join('');
   }else{cls='s5';
     s=bcard('a',u.problem,`<div class="big">${fmt(l.problem)}</div>`+reveal('rvP',u.ansProb,fmt(l.ansProb)))+bcard('b',u.concl,`<div class="mid">${fmt(l.concl)}</div>`)
@@ -574,12 +616,12 @@ function stageHtml(i){const l=L(),u=U(),M=DATA[st.lang].meta;let h='';const gr=G
     const sor=l.sor,lv=[u.lvl1,u.lvl2,u.lvl3];
     h+=sor?`<div class="safety" style="margin-bottom:12px">${esc(u.sorNote)}</div>`:'';
     h+=`<div class="grid">`;
-    if(l.ex&&!sor)h+=card('board',u.sample,`<div class="task"><div class="q">${fmt(l.ex.q)}</div>`+reveal('rvEx',u.solution,fmt(l.ex.sol)+'<br><b>'+esc(u.answer)+':</b> '+fmt(l.ex.a))+`</div>`,true);
+    if(l.ex&&!sor)h+=card('board',u.sample,`<div class="task"><div class="q">${fmt(l.ex.q)}</div>${sk(l.n,'e')}`+reveal('rvEx',u.solution,fmt(l.ex.sol)+'<br><b>'+esc(u.answer)+':</b> '+fmt(l.ex.a))+`</div>`,true);
     l.tasks.forEach((t,k)=>{
-      h+=card('board',(sor?u.item+' '+(k+1):u.task+' '+(k+1)),`<div class="task"><div class="row"><span class="lv">${k+1}</span><span class="tag">${sor?esc(u.noHint):esc(lv[k])}</span></div><div class="q">${fmt(t.q)}</div>${figs((gr.t&&gr.t[k]||{}).q)}`
+      h+=card('board',(sor?u.item+' '+(k+1):u.task+' '+(k+1)),`<div class="task"><div class="row"><span class="lv">${k+1}</span><span class="tag">${sor?esc(u.noHint):esc(lv[k])}</span></div><div class="q">${fmt(t.q)}</div>${(gr.t&&gr.t[k]||{}).q?'':sk(l.n,k+1)}${figs((gr.t&&gr.t[k]||{}).q)}`
         +(t.hint&&!sor?reveal('rvH'+k,u.hints,fmt(t.hint)):'')
         +reveal('rvS'+k,u.showA,fmt(t.sol)+'<br><b>'+esc(u.answer)+':</b> '+fmt(t.a)+figs((gr.t&&gr.t[k]||{}).sol))+`</div>`,true)});
-    if(l.ch&&!sor)h+=card('board',u.challenge,`<div class="task"><div class="q">${fmt(l.ch.q)}</div>`+reveal('rvC',u.showA,fmt(l.ch.ans))+`</div>`,true);
+    if(l.ch&&!sor)h+=card('board',u.challenge,`<div class="task"><div class="q">${fmt(l.ch.q)}</div>${sk(l.n,'c')}`+reveal('rvC',u.showA,fmt(l.ch.ans))+`</div>`,true);
     h+=`</div>`;
   }else{
     h+=`<div class="grid">`
@@ -594,8 +636,354 @@ function stageHtml(i){const l=L(),u=U(),M=DATA[st.lang].meta;let h='';const gr=G
   h=h.replace(/<\/div>$/,compCards(l,i)+'</div>');
   return head+h+nav;
 }
-function renderStage(keepScroll){const el=$('stage');const sc=el.scrollTop;el.innerHTML=st.board?boardHtml(st.stage):stageHtml(st.stage);el.scrollTop=keepScroll?sc:0}
-function setStage(i,resetTimer){st.stage=Math.max(0,Math.min(5,i));renderRail();renderStage();if(resetTimer!==false)tmSet(stageMin()*60);}
+/* ---------- slide deck per lesson ---------- */
+/* ---------- sketches for tasks: library ---------- */
+const SKM={};
+const SS=(inner,h=230)=>SV(inner,520,h+14);
+const P=(d,o={})=>`<path d="${d}" style="fill:${o.f?'var(--'+o.f+')':'none'};stroke:var(--${o.s||'fg'})" stroke-width="${o.w||2.5}" stroke-linecap="round" stroke-linejoin="round"${o.d?` stroke-dasharray="${o.d}"`:''}/>`;
+const dim=(x1,x2,y,t,c='accent',s=18)=>`<line x1="${x1}" y1="${y}" x2="${x2}" y2="${y}" style="stroke:var(--${c})" stroke-width="2.5" marker-start="url(#m-${c})" marker-end="url(#m-${c})"/>`+ln(x1,y-9,x1,y+9,c,2)+ln(x2,y-9,x2,y+9,c,2)+tx((x1+x2)/2,y-12,t,{c,s});
+const dimV=(x,y1,y2,t,c='accent',s=18,side=1)=>`<line x1="${x}" y1="${y1}" x2="${x}" y2="${y2}" style="stroke:var(--${c})" stroke-width="2.5" marker-start="url(#m-${c})" marker-end="url(#m-${c})"/>`+ln(x-9,y1,x+9,y1,c,2)+ln(x-9,y2,x+9,y2,c,2)+tx(x+side*14,(y1+y2)/2+6,t,{c,s,a:side>0?'start':'end'});
+const ground=(y=185,x1=10,x2=510)=>ln(x1,y,x2,y,'fg',3)+Array.from({length:Math.floor((x2-x1)/20)},(_,i)=>ln(x1+10+i*20,y,x1+i*20,y+11,'muted',1.5)).join('');
+const car=(x,y=185,c='accent',k=1)=>`<g transform="translate(${x} ${y}) scale(${k})">`+rc(0,-32,74,22,{f:c,r:7,sw:2})+rc(16,-50,38,20,{f:'panel2',r:5,sw:2})+ci(18,-10,9)+ci(56,-10,9)+'</g>';
+const clock=(x,y,r,t,hand=60)=>ci(x,y,r,'panel','fg')+ln(x,y,x,y-r*.7,'fg',3)+ln(x,y,x+r*.5*Math.sin(hand*Math.PI/180),y-r*.5*Math.cos(hand*Math.PI/180),'fg',3)+tx(x,y+r+22,t,{c:'accent',s:19});
+const wave=(x1,x2,y,c='accent')=>{let d=`M${x1} ${y}`;for(let x=x1;x<x2;x+=24)d+=` q6 -7 12 0 t12 0`;return P(d,{s:c,w:2.5})};
+const rulerH=(x,y,w,n,minor,lab,o={})=>{let s=rc(x,y,w,o.h||30,{f:'panel',r:3,sw:2});for(let i=0;i<=n;i++){const xx=x+i*w/n;const big=i%(minor||1)===0;s+=ln(xx,y,xx,y+(big?18:10),'fg',big?2:1.2)}
+  (lab||[]).forEach(([i,t])=>{s+=tx(x+i*w/n,y+(o.h||30)+18,t,{s:14,c:'muted'})});return s};
+function beaker(x,y,h,lvl,max,step,o={}){const w=o.w||64,wh=lvl/max*h;
+  let s=`<rect x="${x+2}" y="${y+h-wh}" width="${w-4}" height="${wh}" style="fill:var(--accent-soft)"/>`+ln(x+2,y+h-wh,x+w-2,y+h-wh,'accent',3);
+  s+=P(`M${x} ${y} L${x} ${y+h} Q${x} ${y+h+7} ${x+9} ${y+h+7} L${x+w-9} ${y+h+7} Q${x+w} ${y+h+7} ${x+w} ${y+h} L${x+w} ${y}`,{w:3});
+  const n=Math.round(max/step);if(n<=40)for(let i=0;i<=n;i++){const yy=y+h-i*step/max*h;s+=ln(x+w-(i%(o.lab||2)===0?16:9),yy,x+w,yy,'fg',1.4)}
+  (o.labs||[]).forEach(v=>{s+=tx(x+w+8,y+h-v/max*h+5,v,{a:'start',s:13,c:'muted'})});
+  if(o.stone)s+=`<ellipse cx="${x+w/2-4}" cy="${y+h-10}" rx="14" ry="10" style="fill:var(--muted);stroke:var(--fg)" stroke-width="2"/>`;
+  return s}
+function thermo(x,y,h,lv,o={}){const t=y+h*(1-lv);return rc(x-6,y,12,h,{f:'panel',r:6,sw:2.5})+rc(x-3,t,6,y+h-t,{f:'r',s:'r',r:3,sw:0})+ci(x,y+h+10,11,'r','fg')+Array.from({length:o.n||6},(_,i)=>ln(x+6,y+8+i*(h-16)/((o.n||6)-1),x+(i%1===0?14:11),y+8+i*(h-16)/((o.n||6)-1),'fg',1.5)).join('')}
+const box=(x,y,w,h,t,o={})=>rc(x,y,w,h,{f:o.f||'panel2',r:o.r||4,sw:o.sw||2.5})+(t?tx(x+w/2,y+h/2+6,t,{s:o.s||19,c:o.c||'fg'}):'');
+const dot=(x,y,c='fg',r=5)=>ci(x,y,r,c,c);
+const man=(x,y,k=1)=>`<g transform="translate(${x} ${y}) scale(${k})">`+ci(0,-62,9,'panel','fg')+P('M0 -53 L0 -22 M0 -22 L-11 0 M0 -22 L11 0 M0 -46 L-14 -30 M0 -46 L14 -30')+'</g>';
+const spring=(x,y1,y2,n=8,w=14)=>{let d=`M${x} ${y1}`;const st=(y2-y1)/(n*2);for(let i=0;i<n*2;i++)d+=` L${x+(i%2?w:-w)} ${y1+st*(i+.5)}`;return P(d+` L${x} ${y2}`,{w:2.5})};
+const hatch=(x,y,w)=>ln(x,y,x+w,y,'fg',3)+Array.from({length:Math.floor(w/14)},(_,i)=>ln(x+8+i*14,y,x+i*14,y-10,'muted',1.5)).join('');
+const cyl=(x,y,w,h)=>rc(x,y,w,h,{f:'panel',r:3,sw:2.5});
+const arc=(cx,cy,r,a1,a2,o={})=>{const p=a=>[cx+r*Math.cos(a*Math.PI/180),cy-r*Math.sin(a*Math.PI/180)];const [x1,y1]=p(a1),[x2,y2]=p(a2);return P(`M${x1} ${y1} A${r} ${r} 0 ${Math.abs(a2-a1)>180?1:0} ${a2<a1?1:0} ${x2} ${y2}`,o)};
+const unit=(a,b)=>T(a,b);
+function sk(n,key){const f=SKM[n]&&SKM[n][key];if(!f)return '';try{return f()}catch(e){return ''}}
+
+/* lessons 1-8 */
+const note=(x,y,w,h,rows)=>rc(x,y,w,h,{f:'panel',r:4,sw:2})+rows.map((r,i)=>tx(x+10,y+24+i*22,r,{a:'start',s:15,c:i?'fg':'muted'})).join('');
+const ball=(x,y,r,c='accent')=>ci(x,y,r,c,'fg');
+SKM[1]={
+ e:()=>SS(`<rect x="30" y="110" width="280" height="75" style="fill:var(--accent-soft)"/>`+wave(30,306,110)+[0,1,2].map(i=>rc(60+i*80,96,60,22,{f:'panel',r:6,sw:2})).join('')+tx(170,160,T('река','өзен'),{s:20,c:'accent'})+thermo(350,40,140,.12)+tx(350,222,'0 °C',{s:17})+note(395,60,110,100,[T('Дата','Күні'),'1: 3 °C','2: 1 °C','3: 0 °C']),235),
+ 1:()=>SS(rc(30,20,160,160,{f:'panel',r:4,sw:4})+ln(110,20,110,180,'fg',3)+ln(30,100,190,100,'fg',3)+thermo(75,45,90,.45)+clock(300,95,52,'48 '+T('ч','сағ'),30)+note(380,40,125,120,['t, °C',T('1 день','1 күн')+': 4',T('2 день','2 күн')+': 7','…']),235),
+ 2:()=>SS(beaker(70,50,120,80,100,10,{w:110,lab:5})+thermo(125,30,130,.55)+P('M80 215 q10 -14 20 0 t20 0 t20 0 t20 0 t20 0',{s:'r',w:3})+tx(100,235,'P ↑',{s:18,c:'r'})+clock(330,100,50,'1 '+T('мин','мин'),60)+tx(440,95,'t, °C',{s:20})+ar(420,110,500,70,'accent',3),245),
+ 3:()=>SS(ground(180)+ball(150,70,12)+ball(330,66,26,'panel2')+tx(150,106,'m₁',{s:18})+tx(330,112,'m₂ > m₁',{s:18})+ar(150,120,150,172,'r',3)+ar(330,130,330,172,'r',3)+dimV(60,58,180,'h','accent',20)+tx(240,222,'t₁ ? t₂',{s:19,c:'accent'}),235),
+ c:()=>SS([[60,T('механ.','механ.')],[190,T('тепловое','жылулық')],[320,T('световое','жарық')],[450,T('звуковое','дыбыс')]].map(([x,t],i)=>rc(x-55,35,110,130,{f:'panel',r:8,sw:2})+tx(x,190,t,{s:16,c:'muted'})+tx(x,60,'?',{s:26,c:'accent'})+[
+  ball(x,105,14)+ar(x,125,x,158,'r',3),
+  P(`M${x} 85 q-26 28 -12 52 q12 14 12 14 q0 0 12 -14 q14 -24 -12 -52`,{s:'r',f:'warn-soft',w:3}),
+  ci(x,100,24,'warn-soft','fg')+rc(x-10,122,20,16,{f:'panel2',r:2,sw:2})+[0,1,2,3,4].map(k=>ln(x+Math.cos(k*.8+.6)*34,100-Math.sin(k*.8+.6)*34,x+Math.cos(k*.8+.6)*44,100-Math.sin(k*.8+.6)*44,'y',3)).join(''),
+  P(`M${x-22} 110 q0 -40 22 -40 q22 0 22 40 z`,{f:'y',w:2.5})+ci(x,118,5,'fg')+arc(x+26,100,16,60,-60,{s:'accent'})+arc(x+26,100,28,60,-60,{s:'accent'})][i]).join(''),210)
+};
+SKM[2]={
+ e:()=>SS(ci(200,115,80,'panel','line')+tx(200,45,T('С','Т'),{s:22,c:'muted'})+tx(200,200,T('Ю','О'),{s:22,c:'muted'})+tx(98,122,T('З','Б'),{s:22,c:'muted'})+tx(302,122,T('В','Ш'),{s:22,c:'muted'})+ar(200,115,200,52,'accent',6)+car(330,150,'accent',.8)+tx(420,70,'v = 20 '+T('м/с','м/с'),{s:22,c:'accent'})+ln(330,175,400,175,'fg',2),235),
+ 1:()=>SS(rc(130,150,260,18,{f:'panel2',r:3,sw:3})+rc(160,120,200,32,{f:'panel',r:4,sw:2})+ci(260,128,15,'panel','fg')+tx(260,92,'m = 3 '+T('кг','кг'),{s:26,c:'accent'})+rc(210,98,100,24,{f:'accent',r:6,sw:2})+tx(260,115,'m',{s:18,c:'accent-fg'})+ln(260,168,260,190,'fg',3)+rc(220,190,80,14,{f:'panel2',r:3,sw:2})+tx(330,215,'?',{s:26,c:'r'}),235),
+ 2:()=>SS(rc(20,25,150,170,{f:'panel',r:8,sw:2})+tx(95,52,'a)',{s:19,c:'muted'})+ar(40,115,130,115,'accent',5)+tx(85,98,'4 '+T('м','м'),{s:20})+tx(150,150,T('В','Ш'),{s:18,c:'muted'})+rc(185,25,150,170,{f:'panel',r:8,sw:2})+tx(260,52,'б)',{s:19,c:'muted'})+clock(260,115,36,'30 '+T('с','с'),20)+rc(350,25,150,170,{f:'panel',r:8,sw:2})+tx(425,52,'в)',{s:19,c:'muted'})+ar(400,70,400,140,'r',5)+box(375,140,50,30,'')+tx(455,110,'10 Н',{s:20,c:'r'}),215),
+ 3:()=>SS(box(70,100,120,70,'')+dot(190,135,'r',7)+ar(190,135,330,135,'r',6)+tx(260,115,'F',{s:24,c:'r'})+tx(130,142,T('тело','дене'),{s:20,c:'muted'})+tx(190,210,T('точка приложения','түсу нүктесі'),{s:15,c:'muted'})+tx(370,168,T('направление','бағыты'),{s:15,c:'muted'})+dim(190,330,70,T('длина = модуль','ұзындығы = модулі'),'accent',15),235),
+ c:()=>SS(dot(70,170,'accent',8)+dot(440,60,'accent',8)+tx(70,200,'A',{s:22})+tx(440,40,'B',{s:22})+P('M70 170 C130 60 200 230 270 120 S400 190 440 60',{s:'accent',d:'7 6'})+tx(215,48,T('путь','жол'),{s:20,c:'accent'})+ar(70,170,440,60,'r',4)+tx(300,190,T('перемещение','орын ауыстыру'),{s:20,c:'r'}),235)
+};
+SKM[3]={
+ e:()=>SS(rc(24,60,452,34,{f:'accent-soft',r:3,sw:3})+tx(250,83,T('брусок','білеуше'),{s:20,c:'accent'})+rulerH(24,94,468,26,1,[[0,'0'],[5,'5'],[10,'10'],[13,'13 см']].slice(0,3).concat([[12.4,'']]),{h:34}).replace(/<text[^>]*>\s*<\/text>/,'')+tx(250,205,T('1 деление = 0,1 см','1 бөлік = 0,1 см'),{s:19,c:'muted'})+ln(24+12.4*36,60,24+12.4*36,150,'r',2,'5')+tx(24+12.4*36,178,'12,4 '+T('см','см'),{s:20,c:'r'}),225),
+ 1:()=>SS(rulerH(30,70,440,10,1,[[0,'0 °C'],[10,'10 °C']],{h:34})+dim(30,470,50,'10 '+T('делений','бөлік'),'accent',18)+tx(250,160,T('цена деления = ?','бөлік құны = ?'),{s:24,c:'r'}),200),
+ 2:()=>SS(beaker(160,24,150,46,60,2,{w:90,lab:5,labs:[0,20,40,60]})+tx(330,120,'46 '+T('мл','мл'),{s:21,c:'accent'})+tx(330,150,T('цена деления 2 мл','бөлік құны 2 мл'),{s:16,c:'muted'})+tx(110,100,T('Δ = ?','Δ = ?'),{s:24,c:'r'}),215),
+ 3:()=>SS(ci(70,80,5,'fg')+tx(70,60,'250 '+T('мкм','мкм'),{s:20,c:'accent'})+tx(70,115,T('волос','шаш'),{s:15,c:'muted'})+ln(150,80,150,80,'fg')+rc(150,70,320,18,{f:'accent-soft',r:9,sw:2})+tx(310,60,'4,5 Мм',{s:20,c:'accent'})+tx(310,115,T('большое расстояние','үлкен қашықтық'),{s:15,c:'muted'})+tx(250,175,'a · 10ⁿ  м ?',{s:26,c:'r'}),200),
+ c:()=>SS(tx(120,30,T('линейка, цена деления 1 мм','сызғыш, бөлік құны 1 мм'),{s:17,c:'muted'})+rulerH(40,40,400,40,1,[],{h:34})+tx(120,120,T('штангенциркуль, 0,1 мм','штангенциркуль, 0,1 мм'),{s:17,c:'muted'})+rulerH(40,130,400,40*10,10,[],{h:34}).replace(/<line([^>]*)x1="(\d+\.?\d*)"/g,(m)=>m)+tx(250,205,T('Δ₁ : Δ₂ = ?','Δ₁ : Δ₂ = ?'),{s:22,c:'r'}),225)
+};
+const peas=(n,x0,x1,y,r,c='accent-soft')=>Array.from({length:n},(_,i)=>ci(x0+(i+.5)*(x1-x0)/n,y,r,c,'fg')).join('');
+const rowScene=(n,mm,lab,r,fill)=>SS(peas(n,30,490,90,r,fill)+dim(30,490,40,lab,'accent',20)+rulerH(30,112,460,mm/10,1,[[0,'0'],[mm/10,mm+' '+T('мм','мм')]],{h:30}),205);
+SKM[4]={
+ e:()=>rowScene(20,160,'N = 20 ;  L = 160 '+T('мм','мм'),11),
+ 1:()=>rowScene(25,100,'N = 25 ;  L = 100 '+T('мм','мм'),8.5,'y'),
+ 2:()=>SS(Array.from({length:40},(_,i)=>`<rect x="150" y="${150-i*3}" width="130" height="2.4" style="fill:var(--panel);stroke:var(--fg)" stroke-width=".8"/>`).join('')+ln(150,152,280,152,'fg',3)+dimV(310,150,30,'20 '+T('мм','мм'),'accent',20)+tx(215,185,'N = 200 '+T('листов','парақ'),{s:20}),210),
+ 3:()=>SS(peas(40,30,490,90,5.5)+dim(30,490,40,'N = 40 ;  L = 280 '+T('мм','мм'),'accent',20)+rulerH(30,112,460,28,1,[[0,'0'],[28,'280 '+T('мм','мм')]],{h:30})+tx(250,192,'Δл = 0,5 '+T('мм','мм'),{s:19,c:'muted'}),205),
+ c:()=>SS(rc(40,60,300,30,{f:'y',r:15,sw:2.5})+P('M340 75 l12 -6 l6 12 z',{f:'fg'})+Array.from({length:22},(_,i)=>ln(90+i*5,56,90+i*5,94,'fg',3)).join('')+dim(90,195,38,'N = 22','accent',18)+rulerH(40,130,300,15,1,[[0,'0'],[15,'?']],{h:28})+tx(400,100,T('проволока','сым'),{s:18,c:'muted'})+tx(400,125,T('на карандаше','қарындашта'),{s:18,c:'muted'}),205)
+};
+SKM[5]={
+ 1:()=>SS(beaker(160,24,150,65,100,5,{w:90,lab:2,labs:[0,50,100]})+tx(340,90,'65 '+T('мл','мл'),{s:22,c:'accent'})+tx(340,125,T('цена деления 5 мл','бөлік құны 5 мл'),{s:16,c:'muted'}),215),
+ 2:()=>SS(rulerH(30,70,460,25,5,[[0,'0'],[25,'5 '+T('см','см')]],{h:36})+dim(30,490,50,'25 '+T('делений','бөлік'),'accent',18)+tx(250,160,T('цена деления = ?   l = 12,6 см','бөлік құны = ?   l = 12,6 см'),{s:21,c:'r'}),200),
+ 3:()=>SS(beaker(90,24,150,40,100,5,{w:90,lab:2,labs:[0,50,100]})+tx(135,225,'40 '+T('мл','мл'),{s:19,c:'accent'})+beaker(310,24,150,58,100,5,{w:90,lab:2,labs:[0,50,100],stone:true})+tx(355,225,'58 '+T('мл','мл'),{s:19,c:'accent'})+ar(205,100,290,100,'fg',3)+tx(248,88,T('камень','тас'),{s:16,c:'muted'}),240)
+};
+SKM[6]={
+ e:()=>SS(P('M120 170 A100 100 0 0 1 320 170',{s:'accent',w:4})+ln(120,170,320,170,'fg',2,'6')+dot(120,170)+dot(320,170)+tx(108,195,'A',{s:22})+tx(332,195,'B',{s:22})+ar(220,170,320,170,'g',3)+tx(220,150,'r = 2 '+T('м','м'),{s:20,c:'g'})+tx(400,100,T('s = ?  |s| = ?','s = ?  |s| = ?'),{s:21,c:'r'}),215),
+ 1:()=>SS(ground(160)+ln(100,40,100,160,'muted',1.5,'4')+dot(100,120,'fg',7)+tx(84,150,'O',{s:20})+ar(100,112,400,112,'accent',4)+tx(250,132,'3 '+T('км на восток','км шығысқа'),{s:17,c:'accent'})+ar(400,72,300,72,'r',4)+tx(350,56,'1 '+T('км на запад','км батысқа'),{s:17,c:'r'})+tx(30,52,T('З','Б'),{s:18,c:'muted'})+tx(480,52,T('В','Ш'),{s:18,c:'muted'}),210),
+ 2:()=>SS(`<rect x="110" y="50" width="300" height="130" rx="65" style="fill:var(--accent-soft);stroke:var(--fg)" stroke-width="3"/><rect x="170" y="85" width="180" height="60" rx="30" style="fill:var(--bg);stroke:var(--fg)" stroke-width="2"/>`+ln(260,50,260,85,'r',4)+tx(260,38,T('старт / финиш','старт / финиш'),{s:17,c:'r'})+tx(260,122,'400 '+T('м','м')+' × 2',{s:24,c:'accent'}),205),
+ 3:()=>SS(ground(180)+rc(70,90,260,70,{f:'accent',r:10,sw:2.5})+[0,1,2,3].map(i=>rc(90+i*55,102,40,28,{f:'panel',r:3,sw:2})).join('')+man(145,130,.55)+ci(120,162,16)+ci(280,162,16)+ar(340,125,420,125,'g',4)+P('M440 180 v-60',{w:5})+ci(440,105,30,'g','fg')+tx(440,215,T('дерево','ағаш'),{s:16,c:'muted'}),235),
+ c:()=>SS(P('M120 150 C120 40 330 40 330 120 C330 190 190 190 120 150',{s:'accent',w:4})+dot(120,150,'r',7)+tx(95,170,'A',{s:22})+ar(250,62,300,70,'accent',3)+tx(400,100,T('s > 0','s > 0'),{s:22,c:'accent'})+tx(400,135,T('|s| = ?','|s| = ?'),{s:22,c:'r'}),205)
+};
+SKM[7]={
+ e:()=>SS(ground(170)+`<g transform="translate(70 170)">`+ci(0,-12,14)+ci(56,-12,14)+P('M0 -12 L26 -40 L56 -12 M26 -40 L16 -62 M10 -62 L28 -62')+'</g>'+ar(150,130,300,130,'accent',3)+dim(70,400,60,'s = 600 '+T('м','м'),'accent',20)+clock(455,110,38,'',40)+tx(455,170,'t = 100 '+T('с','с'),{s:19,c:'accent'}),215),
+ 1:()=>SS(ground(150)+Array.from({length:4},(_,i)=>rc(30+i*95,100,85,42,{f:i?'panel2':'accent',r:6,sw:2.5})+ci(52+i*95,150,9)+ci(92+i*95,150,9)).join('')+dim(30,400,60,'s = 180 '+T('км','км'),'accent',20)+clock(458,70,32,'',70)+tx(458,125,'3 '+T('ч','сағ'),{s:20,c:'accent'}),200),
+ 2:()=>SS(arc(190,150,110,170,10,{s:'fg',w:4})+Array.from({length:8},(_,i)=>{const a=(170-i*160/7)*Math.PI/180;return ln(190+100*Math.cos(a),150-100*Math.sin(a),190+110*Math.cos(a),150-110*Math.sin(a),'fg',2)}).join('')+ar(190,150,190+88*Math.cos(1.05),150-88*Math.sin(1.05),'r',4)+dot(190,150)+tx(190,200,'72 '+T('км/ч','км/сағ'),{s:24,c:'accent'})+clock(400,100,42,'5 '+T('с','с'),100)+tx(400,200,'v = 72 → ? '+T('м/с','м/с'),{s:17,c:'r'}).replace('y="200"','y="215"'),225),
+ 3:()=>SS(ground(150)+car(30,150,'accent',.8)+ar(95,100,230,100,'accent',3)+dim(30,250,60,'2 '+T('ч','сағ')+' · 60 '+T('км/ч','км/сағ'),'accent',17)+car(270,150,'y',.8)+dim(270,490,60,'1 '+T('ч','сағ')+' · 90 '+T('км/ч','км/сағ'),'g',17)+tx(260,200,'v ср = ?',{s:23,c:'r'}),215),
+ c:()=>SS(ground(150)+car(40,150,'accent',.8)+dim(40,240,60,'v₁ = 20','accent',19)+car(280,150,'y',.8)+dim(280,480,60,'v₂ = 40','g',19)+tx(260,200,T('(20 + 40) : 2 ≟ v ср','(20 + 40) : 2 ≟ v ор'),{s:22,c:'r'}),215)
+};
+SKM[8]={
+ 1:()=>figs([{xl:'t, с',yl:'s, м',xmax:3,ymax:15,xt:1,yt:5,pts:[[0,0],[1,5],[2,10],[3,15]]}])
+};
+
+/* lessons 9-17 */
+const balance=(L,Rw)=>ln(260,120,260,200,'fg',4)+P('M230 200 L290 200 L260 170 Z',{f:'panel2',w:3})+ln(110,120,410,120,'fg',5)+ln(110,120,90,160,'fg',2)+ln(110,120,130,160,'fg',2)+ln(410,120,390,160,'fg',2)+ln(410,120,430,160,'fg',2)+P('M70 160 H150',{w:5})+P('M370 160 H450',{w:5})+L+Rw;
+const weights=(ws,x,y)=>ws.map((w,i)=>{const hh=14+Math.sqrt(w)*1.2,ww=14+Math.sqrt(w)*2.2;const xx=x-ww/2,yy=y-hh-ws.slice(0,i).reduce((s,q)=>s+14+Math.sqrt(q)*1.2,0);return rc(xx,yy,ww,hh,{f:'panel2',r:2,sw:2})+tx(x,yy+hh-4,w+' '+T('г','г'),{s:12,c:'fg'})}).join('');
+const cube3=(x,y,w,h,d,f='panel2')=>rc(x,y+d/2,w,h,{f,r:2,sw:2.5})+P(`M${x} ${y+d/2} L${x+d} ${y} L${x+w+d} ${y} L${x+w} ${y+d/2} Z`,{f:'panel',w:2.5})+P(`M${x+w} ${y+d/2} L${x+w+d} ${y} L${x+w+d} ${y+h-d/2} L${x+w} ${y+h+d/2} Z`,{f:'line',w:2.5});
+const mvBox=(m,V,r,sub)=>cube3(40,50,110,90,40)+tx(300,70,m,{s:23,c:'accent',a:'start'})+tx(300,108,V,{s:23,c:'accent',a:'start'})+tx(300,146,r||'ρ = ?',{s:23,c:'r',a:'start'});
+const mkScale=(x,m,fn)=>rc(x,120,130,18,{f:'panel2',r:4,sw:3})+rc(x+30,138,70,34,{f:'panel2',r:3,sw:2.5})+tx(x+65,162,m,{s:19,c:'accent'})+fn(x+45,120);
+const bk=(lvl,col)=>(x,yb)=>(col?`<rect x="${x+2}" y="${yb-6-lvl}" width="36" height="${lvl}" style="fill:var(--${col})"/>`:'')+beaker(x,yb-76,70,0,70,10,{w:40,lab:2}).replace(/<rect[^>]*height="0"[^>]*\/>/,'').replace(/<line[^>]*stroke:var\(--accent\)[^>]*\/>/,'');
+const forceBody=(bx,by,bw,bh,arrs,label)=>{let s=box(bx,by,bw,bh,label||'',{s:19});arrs.forEach(a=>{const cy=by+bh/2,cx=bx+bw/2;
+  if(a.d==='r')s+=ar(bx+bw,cy+(a.dy||0),bx+bw+a.len,cy+(a.dy||0),a.c||'r',5)+tx(bx+bw+a.len/2,cy-20+(a.dy||0),a.t,{s:20,c:a.c||'r'});
+  if(a.d==='l')s+=ar(bx,cy+(a.dy||0),bx-a.len,cy+(a.dy||0),a.c||'accent',5)+tx(bx-a.len/2,cy-20+(a.dy||0),a.t,{s:20,c:a.c||'accent'});
+  if(a.d==='d')s+=ar(cx+(a.dx||0),by+bh,cx+(a.dx||0),by+bh+a.len,a.c||'r',5)+tx(cx+(a.dx||0)+14,by+bh+a.len/2+6,a.t,{s:20,c:a.c||'r',a:'start'});
+  if(a.d==='u')s+=ar(cx+(a.dx||0),by,cx+(a.dx||0),by-a.len,a.c||'g',5)+tx(cx+(a.dx||0)+14,by-a.len/2+6,a.t,{s:20,c:a.c||'g',a:'start'})});return s};
+const scaleBar=(x,y,px,t)=>ln(x,y,x+px,y,'fg',3)+ln(x,y-6,x,y+6,'fg',2)+ln(x+px,y-6,x+px,y+6,'fg',2)+tx(x+px/2,y+22,t,{s:15,c:'muted'});
+const vspring=(x,top,len,load,lab,ruler)=>hatch(x-50,top,100)+spring(x,top,top+len,8,14)+box(x-26,top+len,52,34,load,{s:18})+(ruler?rulerV(x+60,top,160,16,lab):dimV(x+40,top,top+len,lab,'accent',18));
+const rulerV=(x,y,h,n,t)=>rc(x,y,24,h,{f:'panel',r:3,sw:2})+Array.from({length:n+1},(_,i)=>ln(x,y+i*h/n,x+(i%5===0?16:9),y+i*h/n,'fg',1.5)).join('');
+SKM[9]={
+ e:()=>SS(beaker(90,24,150,30,60,2,{w:90,lab:5,labs:[0,30,60]})+tx(135,222,'30 '+T('мл','мл'),{s:19,c:'accent'})+beaker(310,24,150,45,60,2,{w:90,lab:5,labs:[0,30,60],stone:true})+tx(355,222,'45 '+T('мл','мл'),{s:19,c:'accent'})+ar(205,100,290,100,'fg',3)+tx(248,88,T('тело','дене'),{s:16,c:'muted'}),235),
+ 1:()=>SS(balance(ci(110,140,17,'accent','fg')+tx(110,100,T('тело','дене'),{s:16,c:'muted'}),weights([100,20,5],410,160))+tx(260,222,T('m = ? г = ? кг','m = ? г = ? кг'),{s:20,c:'r'}),235),
+ 2:()=>SS(cube3(120,60,150,70,60)+dim(120,270,45,'5 '+T('см','см'),'accent',18)+dimV(100,100,170,'2 '+T('см','см'),'accent',18,-1)+tx(350,80,'4 '+T('см','см'),{s:18,c:'accent',a:'start'})+tx(260,215,'V = ? '+T('см³ = ? м³','см³ = ? м³'),{s:20,c:'r'}),230),
+ 3:()=>SS(beaker(90,20,160,120,200,5,{w:90,lab:5,labs:[0,100,200]})+tx(135,222,'120 '+T('мл','мл'),{s:19,c:'accent'})+beaker(310,20,160,165,200,5,{w:90,lab:5,labs:[0,100,200],stone:true})+tx(355,222,'165 '+T('мл','мл'),{s:19,c:'accent'})+ar(205,100,290,100,'fg',3)+tx(430,60,T('цена деления 5 мл','бөлік құны 5 мл'),{s:14,c:'muted'}),235),
+ c:()=>SS(P('M70 80 L70 170 Q70 185 85 185 L205 185 Q220 185 220 170 L220 80',{w:3})+P('M220 80 L260 70 L275 76',{w:3})+`<rect x="72" y="100" width="146" height="83" style="fill:var(--accent-soft)"/>`+ln(72,100,218,100,'accent',3)+`<ellipse cx="145" cy="150" rx="40" ry="26" style="fill:var(--muted);stroke:var(--fg)" stroke-width="2.5"/>`+P('M278 85 q5 20 3 38',{s:'accent',w:3})+beaker(280,110,80,60,100,10,{w:60,lab:5})+tx(150,215,T('отливной сосуд','құятын ыдыс'),{s:16,c:'muted'})+tx(410,150,'V = ?',{s:24,c:'r'}),235)
+};
+SKM[10]={
+ 1:()=>SS(mvBox('m = 200 '+T('г','г'),'V = 25 '+T('см³','см³'),'ρ = ? '+T('г/см³ = ? кг/м³','г/см³ = ? кг/м³'),''),200).replace(/ρ = \?[^<]*<\/text>/,m=>m),
+ 2:()=>SS(P('M60 170 L110 80 L160 120 L210 60 L260 150 L300 100 L360 170 Z',{f:'accent-soft',s:'accent',w:3.5})+ln(30,170,400,170,'accent',3)+wave(30,400,170)+tx(210,40,T('лёд','мұз'),{s:20,c:'accent'})+tx(450,80,'ρ = 900',{s:22,c:'accent'})+tx(450,108,T('кг/м³','кг/м³'),{s:16,c:'muted'})+tx(450,145,'V = 2 '+T('м³','м³'),{s:22,c:'accent'})+tx(450,185,'m = ?',{s:24,c:'r'}),215),
+ 3:()=>SS(rc(150,50,110,130,{f:'warn-soft',r:12,sw:3})+rc(180,28,50,24,{f:'panel2',r:5,sw:2.5})+rc(150,110,110,70,{f:'y',r:0,sw:0})+ln(150,110,260,110,'fg',2)+tx(205,160,T('керосин','керосин'),{s:17})+tx(400,75,'m = 16 '+T('кг','кг'),{s:22,c:'accent'})+tx(400,110,'ρ = 800 '+T('кг/м³','кг/м³'),{s:21,c:'accent'})+tx(400,150,'V = ? '+T('м³ = ? л','м³ = ? л'),{s:21,c:'r'}),215)
+};
+const flat=(x,y)=>rc(x,y,130,14,{f:'panel2',r:3,sw:3});
+SKM[11]={
+ e:()=>SS(mkScale(40,'90 '+T('г','г'),bk(0))+mkScale(250,'140 '+T('г','г'),bk(46,'accent-soft'))+tx(400,70,'V = 50 '+T('см³','см³'),{s:20,c:'accent',a:'start'}).replace('x="400"','x="395"')+tx(400,110,'ρ = ?',{s:26,c:'r',a:'start'}).replace('x="400"','x="395"'),215),
+ 1:()=>SS(mvBox('m = 156 '+T('г','г'),'V = 20 '+T('см³','см³'),'ρ = ?  →  '+T('вещество','зат'),''),200),
+ 2:()=>SS(mkScale(30,'50 '+T('г','г'),bk(0))+mkScale(200,'128 '+T('г','г'),bk(52,'warn-soft'))+tx(370,80,'V = 85 '+T('см³','см³'),{s:20,c:'accent',a:'start'})+tx(370,125,'ρ = ? '+T('кг/м³','кг/м³'),{s:22,c:'r',a:'start'}),215),
+ 3:()=>SS(rc(120,170,60,0,{})+`<rect x="100" y="${170-102}" width="90" height="102" style="fill:var(--accent-soft);stroke:var(--accent)" stroke-width="3"/>`+tx(145,194,T('опыт','тәжірибе')+' 1020',{s:18})+`<rect x="260" y="${170-100}" width="90" height="100" style="fill:var(--panel);stroke:var(--fg)" stroke-width="3"/>`+tx(305,194,T('таблица','кесте')+' 1000',{s:18})+tx(145,60,'ρ = 1020 '+T('кг/м³','кг/м³'),{s:17,c:'accent'})+tx(305,60,'ρ = 1000 '+T('кг/м³','кг/м³'),{s:17})+tx(430,110,'δ = ?  %',{s:24,c:'r'}),215),
+ c:()=>SS(P('M60 90 L60 180 L360 180 L360 90',{w:3})+`<rect x="62" y="130" width="296" height="48" style="fill:var(--accent-soft)"/>`+ln(62,130,358,130,'accent',3)+rc(160,95,100,55,{f:'warn-soft',r:3,sw:3})+dimV(290,130,150,'h₁','accent',17)+dimV(290,95,130,'h₂','g',17)+rulerV(380,90,90,9,'')+tx(205,125,'ρ₀',{s:22})+tx(190,205,T('жидкость ρ = ?','сұйықтық ρ = ?'),{s:17,c:'accent'})+tx(450,70,T('линейка','сызғыш'),{s:15,c:'muted'}),215)
+};
+const sled=(x,y)=>rc(x,y-24,100,14,{f:'warn-soft',r:3,sw:2.5})+P(`M${x-6} ${y-4} q-6 0 -6 -10 M${x+106} ${y-4} q6 0 6 -10`,{w:3})+ln(x-6,y-3,x+106,y-3,'fg',3);
+SKM[12]={
+ e:()=>SS(forceBody(190,70,130,60,[{d:'r',len:60,t:'6 Н',c:'r'},{d:'l',len:50,t:'2 Н',c:'accent'}],T('тело','дене'))+ground(170,20,500),215),
+ 1:()=>SS(ground(175)+rc(60,95,260,60,{f:'accent',r:10,sw:2.5})+[0,1,2,3].map(i=>rc(80+i*55,105,40,24,{f:'panel',r:3,sw:2})).join('')+ci(105,160,15)+ci(280,160,15)+ar(340,125,430,125,'accent',4)+tx(385,112,'v',{s:20,c:'accent'})+ci(190,110,7,'panel','fg')+P('M190 118 L205 148 M193 128 L215 122',{w:3})+ar(150,70,100,70,'r',3)+tx(120,56,T('торможение','тежеу'),{s:16,c:'r'})+P('M205 140 q22 -10 34 -34',{s:'muted',d:'4'})+tx(400,60,T('почему вперёд?','неге алға?'),{s:19,c:'r'}),215),
+ 2:()=>SS(ground(175)+sled(210,170)+man(180,170,.9)+ln(200,142,230,142,'fg',2)+man(110,170,.9)+ar(120,130,205,148,'accent',4)+tx(150,112,'40 Н',{s:19,c:'accent'})+ar(320,148,370,148,'g',4)+tx(345,132,'25 Н',{s:18,c:'g'})+scaleBar(60,208,40,'1 '+T('см','см')+' – 10 Н'),235),
+ 3:()=>SS(forceBody(190,70,110,60,[{d:'r',len:110,t:'50 Н'},{d:'l',len:70,t:'30 Н',dy:0}],T('ящик','жәшік'))+ground(155,20,500)+tx(260,205,T('F = ?  →','F = ?  →'),{s:22,c:'r'}),215),
+ c:()=>SS(P('M120 120 Q120 40 210 40 Q300 40 300 120 Q277 106 255 120 Q232 106 210 120 Q188 106 165 120 Q142 106 120 120 Z',{f:'accent-soft',s:'accent',w:3.5})+ln(210,40,210,185,'fg',4)+P('M210 185 q0 16 -16 16',{w:4})+[[70,70],[55,105],[78,140],[350,70],[365,105],[342,140],[100,168],[322,168]].map(([x,y])=>P(`M${x} ${y} q5 8 0 14 q-5 -6 0 -14`,{f:'accent',s:'accent',w:1.5})).join('')+ar(140,215,90,215,'fg',3)+ar(280,215,330,215,'fg',3)+tx(210,230,T('встряхивание','сілку'),{s:17,c:'r'}),240)
+};
+SKM[13]={
+ e:()=>SS(rc(160,150,200,16,{f:'panel2',r:3,sw:3})+box(210,90,100,60,'5 '+T('кг','кг'),{s:20})+ar(260,120,260,200,'r',5)+tx(285,185,'Fт = ?',{s:21,c:'r',a:'start'})+tx(430,110,'g = 10 Н/кг',{s:19,c:'muted'}),225),
+ 1:()=>SS(ground(180)+man(250,180,1.5)+ar(250,115,250,190,'r',5)+tx(275,150,'Fт',{s:22,c:'r',a:'start'})+ar(235,180,235,215,'accent',4)+tx(212,205,'P',{s:22,c:'accent'})+tx(400,100,'m = 40 '+T('кг','кг'),{s:21,c:'accent'})+tx(400,135,'Fт = ?  P = ?',{s:21,c:'r'}),235),
+ 2:()=>SS(hatch(150,25,100)+spring(200,25,120,9,14)+rc(150,120,100,16,{f:'panel2',r:3,sw:2})+box(172,136,56,44,'?',{s:22})+ar(200,180,200,225,'r',4)+tx(245,210,'12 Н',{s:22,c:'r',a:'start'}).replace('x="245"','x="215"')+tx(360,90,T('динамометр','динамометр'),{s:19,c:'muted'})+tx(360,130,'m = ?',{s:24,c:'r'}),235),
+ 3:()=>SS(rc(120,160,280,14,{f:'panel2',r:3,sw:3})+box(210,105,100,55,T('рюкзак','рюкзак')+' 6 '+T('кг','кг'),{s:17})+ar(260,132,260,200,'r',5)+tx(280,205,'Fт',{s:20,c:'r',a:'start'})+ar(240,174,240,214,'accent',4)+tx(220,215,'P',{s:20,c:'accent'})+scaleBar(430,140,60,'1 '+T('см','см')+' – 20 Н'),235),
+ c:()=>SS(ci(130,115,70,'accent-soft','accent')+tx(130,120,T('Земля','Жер'),{s:18})+P('M130 20 a95 95 0 0 1 0 190',{s:'muted',d:'6'})+rc(222,60,36,22,{f:'panel2',r:3,sw:2.5})+ci(240,100,5,'fg')+man(300,150,.5)+ar(205,75,170,100,'r',3)+tx(380,100,T('невесомость','салмақсыздық'),{s:20,c:'accent'})+tx(380,135,'Fт ≠ 0 , P = 0',{s:20,c:'r'}),225)
+};
+SKM[14]={
+ e:()=>SS(hatch(40,90,40)+spring(60,90,160,6,13)+ln(40,90,40,90)+rulerV(140,90,140,14,'')+box(30,160,60,30,'')+dimV(100,100,160,'5 '+T('см','см'),'accent',18)+tx(260,100,'k = 100 Н/м',{s:21,c:'accent'})+tx(260,150,'F = ?',{s:26,c:'r'}),215),
+ 1:()=>SS(vspring(200,20,110,'3 Н','6 '+T('см','см'))+tx(380,90,'F = 3 Н',{s:21,c:'accent'})+tx(380,128,'k = ?',{s:26,c:'r'}),215),
+ 2:()=>SS(hatch(40,25,80)+spring(80,25,110,7,12)+box(55,110,50,30,'')+tx(80,170,'k = 200 Н/м',{s:17,c:'accent'})+dimV(120,25,110,'2 '+T('см','см'),'accent',17)+tx(80,195,'F = ?',{s:20,c:'r'})+hatch(300,25,80)+spring(340,25,150,7,12)+box(315,150,50,30,'10 Н',{s:16})+tx(340,205,'k = 200 Н/м',{s:17,c:'accent'})+tx(400,100,'Δl = ?',{s:20,c:'r'}),225),
+ c:()=>SS(ln(60,190,60,30,'fg',3)+ln(60,190,260,190,'fg',3)+tx(40,28,'F',{s:18})+tx(266,208,'Δl',{s:18})+P('M60 190 L150 90 Q190 55 230 52',{s:'accent',w:4})+P('M60 190 L150 90',{s:'g',w:5})+tx(110,80,T('закон Гука','Гук заңы'),{s:15,c:'g'})+tx(210,38,T('перегрузка','шамадан тыс'),{s:15,c:'r'})+vspring(400,20,100,'F ↑','',false).replace(/<line[^>]*marker[^>]*\/>/,''),215)
+};
+SKM[15]={
+ 3:()=>SS(rc(30,35,220,150,{f:'panel',r:8,sw:2})+tx(140,60,T('полезное','пайдалы'),{s:19,c:'g'})+ci(80,130,30,'panel2','fg')+ci(80,130,8,'fg')+ln(40,160,120,160,'fg',3)+ar(120,100,160,100,'accent',3)+tx(185,140,T('тормоз','тежегіш'),{s:16,c:'muted'})+rc(270,35,220,150,{f:'panel',r:8,sw:2})+tx(380,60,T('вредное','зиянды'),{s:19,c:'r'})+ci(330,125,26,'panel2','fg')+ci(375,125,26,'panel2','fg')+P('M310 160 q30 15 70 0',{s:'r',w:3})+tx(425,150,T('износ','тозу'),{s:16,c:'muted'}),210)
+};
+SKM[16]={
+ e:()=>SS(forceBody(190,70,110,50,[{d:'r',len:80,t:'2 Н',c:'accent'},{d:'l',len:60,t:'1,5 Н',c:'r'}],T('брусок','білеуше'))+ground(145,20,500)+scaleBar(30,195,40,'1 '+T('см','см')+' – 0,5 Н'),215),
+ 1:()=>SS(ground(160)+box(210,100,100,60,T('брусок','білеуше'),{s:17})+ln(310,130,340,130,'fg',3)+rc(340,112,120,36,{f:'panel',r:6,sw:2.5})+tx(400,136,'2,4 Н',{s:20,c:'accent'})+ar(210,160,160,160,'r',4).replace('y1="160"','y1="150"').replace('y2="160"','y2="150"')+tx(180,135,'Fтр = ?',{s:19,c:'r'})+tx(260,205,T('равномерно','бірқалыпты'),{s:17,c:'muted'})+scaleBar(380,200,50,'1 '+T('см','см')+' – 0,8 Н'),225),
+ 2:()=>SS(ground(160,10,250)+box(60,110,100,50,T('брусок','білеуше'),{s:16})+ground(160,270,510)+box(310,108,100,52,'',{s:16})+box(330,70,60,38,T('груз','жүк'),{s:15})+tx(110,195,'Fтр₁',{s:18,c:'r'})+tx(360,195,'Fтр₂ = ?',{s:18,c:'r'})+ar(230,135,250,135,'fg',2),215),
+ 3:()=>SS(forceBody(210,70,100,50,[{d:'r',len:80,t:'8 Н',dy:-12,c:'accent'},{d:'r',len:30,t:'',dy:14,c:'accent'},{d:'l',len:50,t:'5 Н',c:'r'}],T('тело','дене'))+tx(345,150,'3 Н',{s:19,c:'accent'})+ground(145,20,500)+scaleBar(30,195,40,'1 '+T('см','см')+' – 2 Н'),215),
+ c:()=>SS(ground(170,10,250)+box(60,120,110,50,T('груз','жүк'),{s:17})+ar(60,145,20,145,'accent',3)+tx(110,200,T('волоком','сүйреп'),{s:17,c:'r'})+ground(170,270,510)+box(310,110,110,40,T('груз','жүк'),{s:17})+ci(325,162,10,'panel2','fg')+ci(365,162,10,'panel2','fg')+ci(405,162,10,'panel2','fg')+tx(365,200,T('на катках','табандықтарда'),{s:17,c:'g'}),215)
+};
+const press=(F,S,body,n)=>box(190,60,150,70,body||'',{s:20})+ar(265,10,265,58,'r',5)+tx(285,36,F,{s:22,c:'r',a:'start'})+rc(150,130,230,16,{f:'panel2',r:3,sw:3})+dim(190,340,172,S,'accent',20);
+SKM[17]={
+ e:()=>SS(press('F = 200 Н','S = 0,5 '+T('м²','м²'),'')+tx(420,100,'p = ?',{s:26,c:'r'}),215),
+ 1:()=>SS(press('P = 600 Н','S = 0,3 '+T('м²','м²'),T('ящик','жәшік'))+tx(430,100,'p = ?',{s:26,c:'r'}),215),
+ 2:()=>SS(ground(185)+man(190,185,1.6)+rc(158,178,34,10,{f:'panel2',r:3,sw:2})+rc(188,178,34,10,{f:'panel2',r:3,sw:2})+tx(330,80,'m = 45 '+T('кг','кг'),{s:21,c:'accent'})+tx(330,115,'S₁ = 150 '+T('см²','см²'),{s:19,c:'accent'})+tx(330,150,'p = ?  (2 '+T('ноги','аяқ')+')',{s:21,c:'r'}),215),
+ 3:()=>SS(ground(185)+rc(120,110,170,52,{f:'accent',r:6,sw:2.5})+rc(160,80,90,30,{f:'accent',r:6,sw:2.5})+ln(240,95,320,80,'fg',5)+rc(105,160,200,24,{f:'panel2',r:12,sw:3})+Array.from({length:8},(_,i)=>ci(125+i*23,172,7,'panel','fg')).join('')+tx(400,90,'m = 40 '+T('т','т'),{s:21,c:'accent'})+tx(400,125,'S = 5 '+T('м²','м²'),{s:21,c:'accent'})+tx(400,160,'p = ?',{s:24,c:'r'}),215),
+ c:()=>SS(box(40,70,120,60,'F, S',{s:20})+rc(20,130,160,12,{f:'panel2',r:3,sw:3})+tx(100,36,'p₁',{s:22})+ar(100,45,100,68,'r',4)+tx(290,95,'→',{s:34,c:'muted'})+box(340,70,30,60,'',{s:14})+tx(385,100,'2F, S/4',{s:20,a:'start'}).replace('x="385"','x="380"')+rc(325,130,60,12,{f:'panel2',r:3,sw:3})+tx(355,36,'p₂',{s:22})+ar(355,45,355,68,'r',4)+tx(260,200,'p₂ : p₁ = ?',{s:24,c:'r'}),215)
+};
+
+/* lessons 18-26 */
+const tank=(x,w,top,bot,fill,lab,o={})=>`<rect x="${x}" y="${top}" width="${w}" height="${bot-top}" style="fill:var(--${fill||'accent-soft'})"/>`+P(`M${x} ${top-30} V${bot} H${x+w} V${top-30}`,{w:3.5})+ln(x,top,x+w,top,'accent',3)+(o.pt?ci(x+w/2,bot-8,6,'r','r')+tx(x+w/2+16,bot-14,'p = ?',{s:19,c:'r',a:'start'}):'')+(lab?dimV(x+w+26,top,bot,lab,'g',19):'');
+const ucols=(l,r,lc,rc,ll,rl)=>{const base=190,u=(v)=>base-v;return `<rect x="110" y="${u(l)}" width="40" height="${l}" style="fill:var(--${lc})"/><rect x="230" y="${u(r)}" width="40" height="${r}" style="fill:var(--${rc})"/><rect x="150" y="150" width="80" height="40" style="fill:var(--${lc})"/>`+P(`M110 40 V190 H270 V40 M150 40 V150 H230 V40`,{w:3.5})+ln(110,u(l),150,u(l),'fg',2)+ln(230,u(r),270,u(r),'fg',2)+ln(70,190,310,190,'muted',1.2,'5')+dimV(90,u(l),190,ll,'g',19,-1)+(rl?dimV(290,u(r),190,rl,'r',19):'')};
+SKM[18]={
+ e:()=>SS(tank(150,110,60,190,'accent-soft',null,{pt:true})+dimV(120,60,190,'5 '+T('м','м'),'g',20,-1)+tx(220,50,T('вода','су'),{s:19,c:'accent'})+tx(400,100,'g = 10 Н/кг',{s:20,c:'muted'})+tx(400,140,'p = ?',{s:26,c:'r'}),215),
+ 1:()=>SS(tank(150,110,70,190,'y',null,{pt:true})+dimV(120,70,190,'3 '+T('м','м'),'g',20,-1)+tx(205,55,T('керосин','керосин'),{s:18})+tx(390,110,'ρ = 800 '+T('кг/м³','кг/м³'),{s:21,c:'accent'}),215),
+ 2:()=>SS(`<rect x="0" y="60" width="520" height="150" style="fill:var(--accent-soft)"/>`+wave(0,520,60)+man(250,150,1.1)+ci(250,100,16,'panel','fg')+dimV(120,60,170,'h = ?','g',22)+tx(410,120,'p = 300 '+T('кПа','кПа'),{s:22,c:'accent'}),225),
+ 3:()=>SS(tank(70,100,70,190,'accent-soft','20 '+T('см','см'))+tx(120,215,T('вода','су'),{s:17})+tank(290,100,70,190,'muted','20 '+T('см','см'))+tx(340,215,T('ртуть','сынап'),{s:17})+tx(240,40,'p₂ : p₁ = ?',{s:24,c:'r'}),235),
+ c:()=>SS(P('M150 30 L150 190 L330 190 L270 30 Z',{f:'panel2',w:3.5})+`<rect x="30" y="50" width="120" height="140" style="fill:var(--accent-soft)"/>`+wave(30,150,50)+ar(40,180,140,180,'r',4)+ar(40,150,140,150,'r',3)+ar(40,120,140,120,'r',2.5)+ar(40,90,140,90,'r',1.8)+tx(220,215,T('плотина','бөгет'),{s:18,c:'muted'}),235)
+};
+SKM[19]={
+ e:()=>SS(ucols(100,100,'accent-soft','y','10 '+T('см','см'),'h = ?')+tx(130,30,T('вода','су'),{s:18,c:'accent'})+tx(250,30,T('керосин','керосин'),{s:18}),225),
+ 1:()=>SS(P('M120 80 Q110 190 200 190 Q290 190 280 80 Z',{f:'panel2',w:3.5})+P('M280 120 Q330 100 350 50 L362 56 Q335 120 280 150',{f:'panel2',w:3.5})+`<path d="M122 125 H278 L282 100 Q330 90 345 70" style="fill:none"/>`+`<rect x="123" y="125" width="155" height="62" rx="20" style="fill:var(--accent-soft)"/>`+ln(124,125,278,125,'accent',3)+ln(305,125,330,125,'accent',3)+ln(250,75,250,75)+P('M150 80 H250',{w:3.5})+tx(200,50,T('чайник','шәйнек'),{s:18,c:'muted'})+tx(260,215,T('почему на одном уровне?','неге бір деңгейде?'),{s:18,c:'r'}),210),
+ 2:()=>SS(ucols(100,100,'accent-soft','warn-soft','20 '+T('см','см'),'h = ?')+tx(130,30,T('вода','су'),{s:18,c:'accent'})+tx(250,30,T('бензин','бензин'),{s:18}),225),
+ 3:()=>SS([[90,T('чайник','шәйнек'),`<path d="M50 110 Q45 170 90 170 Q135 170 130 110 Z" style="fill:var(--accent-soft);stroke:var(--fg)" stroke-width="3"/><path d="M130 130 Q155 120 165 80" style="fill:none;stroke:var(--fg)" stroke-width="3"/>`],[260,T('лейка','құйғыш'),`<path d="M215 110 Q210 170 255 170 Q300 170 295 110 Z" style="fill:var(--accent-soft);stroke:var(--fg)" stroke-width="3"/><path d="M295 135 L350 95" style="fill:none;stroke:var(--fg)" stroke-width="3"/>`],[430,T('шлюз','шлюз'),`<rect x="380" y="90" width="55" height="75" style="fill:var(--accent-soft);stroke:var(--fg)" stroke-width="3"/><rect x="450" y="125" width="55" height="40" style="fill:var(--accent-soft);stroke:var(--fg)" stroke-width="3"/>`]].map(([x,t,s])=>s+tx(x,205,t,{s:17,c:'muted'})).join(''),220),
+ c:()=>SS(rc(40,20,60,190,{f:'panel',r:2,sw:2})+ln(40,70,100,70,'fg',2)+ln(40,130,100,130,'fg',2)+tx(70,60,'A',{s:20})+tx(70,160,'B',{s:20})+P('M100 70 C200 70 230 40 330 40 M100 130 C200 130 230 170 330 170 M330 40 V170',{w:5,s:'accent'})+tx(430,60,T('прозрачный шланг','мөлдір шланг'),{s:17,c:'muted'})+tx(430,115,'A ≟ B ?',{s:24,c:'r'}),225)
+};
+const hyd=(f1,s1,s2,f2)=>`<path d="M62 100 H118 V150 H302 V120 H418 V188 H62 Z" style="fill:var(--accent-soft)"/>`+P('M60 50 V190 H420 V90 M120 50 V150 H300 V90',{w:3.5})+rc(62,92,56,9,{f:'panel2',r:2,sw:3})+rc(302,112,116,9,{f:'panel2',r:2,sw:3})+ar(90,10,90,88,'r',4)+tx(105,40,f1,{s:19,c:'r',a:'start'})+tx(90,215,s1,{s:17,c:'accent'})+tx(360,215,s2,{s:17,c:'accent'})+(f2?box(310,64,100,44,f2,{s:17}):'');
+SKM[20]={
+ e:()=>SS(hyd('40 Н','S₁ = 10 '+T('см²','см²'),'S₂ = 500 '+T('см²','см²'),'F₂ = ?'),235),
+ 1:()=>SS(hyd('F₁','S₁ = 4 '+T('см²','см²'),'S₂ = 80 '+T('см²','см²'),'F₂')+tx(260,40,'F₂ : F₁ = ?',{s:23,c:'r'}),235),
+ 2:()=>SS(hyd('F₁ = ?','S₁ = 6 '+T('см²','см²'),'S₂ = 300 '+T('см²','см²'),'5000 Н'),235),
+ 3:()=>SS(hyd('F₁','','','F₂')+tx(30,120,'↓ 20 '+T('см','см'),{s:20,c:'g',a:'start'}).replace('x="30"','x="130"').replace('y="120"','y="75"')+tx(430,130,'↑ 1 '+T('см','см'),{s:20,c:'g',a:'start'}),235),
+ c:()=>SS(P('M60 50 V170 H200 V50',{w:3.5})+rc(60,50,140,14,{f:'panel2',r:2,sw:3})+Array.from({length:6},(_,i)=>ci(90+(i%3)*40,100+Math.floor(i/3)*40,6,'accent','accent')).join('')+tx(130,205,T('газ — сжимается','газ — сығылады'),{s:17,c:'r'})+P('M290 50 V170 H430 V50',{w:3.5})+rc(290,110,140,14,{f:'panel2',r:2,sw:3})+`<rect x="292" y="124" width="136" height="44" style="fill:var(--accent-soft)"/>`+tx(360,205,T('жидкость — почти нет','сұйықтық — аз сығылады'),{s:17,c:'g'}),230)
+};
+SKM[21]={
+ e:()=>SS(P('M150 20 V150',{w:3})+rc(150,20,36,170,{f:'panel',r:3,sw:3})+`<rect x="153" y="60" width="30" height="128" style="fill:var(--muted)"/>`+rc(110,160,120,40,{f:'accent-soft',r:6,sw:3})+ln(186,60,260,60,'r',2,'5')+dimV(250,60,188,'750 '+T('мм','мм'),'accent',20)+tx(380,105,T('p = ? Па','p = ? Па'),{s:26,c:'r'})+tx(380,175,'1 мм рт. ст. ≈ 133 Па',{s:15,c:'muted'}).replace('1 мм рт. ст.',T('1 мм рт. ст.','1 мм сын. бағ.')),235),
+ 1:()=>SS(P('M180 30 L180 130 Q180 170 225 170 Q270 170 270 130 L270 30',{w:3.5})+`<path d="M182 50 H268 V128 Q268 168 225 168 Q182 168 182 128 Z" style="fill:var(--accent-soft)"/>`+rc(172,24,106,8,{f:'panel',r:2,sw:2.5})+ar(225,215,225,176,'g',4)+tx(255,205,'p атм',{s:17,c:'g',a:'start'}).replace('p атм',T('p атм','p атм'))+ar(190,215,190,176,'g',3)+ar(260,215,260,176,'g',3)+tx(380,80,T('лист бумаги','қағаз парағы'),{s:17,c:'muted'})+ln(300,74,280,28,'muted',1.5)+tx(380,130,T('вода не выливается — почему?','су төгілмейді — неге?'),{s:16,c:'r'}),235),
+ 2:()=>SS(ci(150,110,90,'panel','fg')+Array.from({length:13},(_,i)=>{const a=(215-i*20)*Math.PI/180;return ln(150+80*Math.cos(a),110-80*Math.sin(a),150+90*Math.cos(a),110-90*Math.sin(a),'fg',2)}).join('')+ar(150,110,150+60*Math.cos(.55),110-60*Math.sin(.55),'r',4)+tx(150,150,T('мм рт. ст.','мм сын. бағ.'),{s:14,c:'muted'})+dot(150,110)+tx(150,232,'720',{s:26,c:'accent'})+tx(370,100,T('норма: 760','норма: 760'),{s:19,c:'muted'})+tx(370,140,'p = ? '+T('Па','Па'),{s:23,c:'r'}),235),
+ 3:()=>SS(P('M20 190 L120 190 L220 70 L300 40 L420 190 L500 190',{f:'panel2',w:3.5})+tx(70,172,'760 '+T('мм рт. ст.','мм с.б.'),{s:14,c:'accent'})+tx(300,30,'700',{s:19,c:'accent'}).replace('x="300"','x="310"')+dot(300,40,'r',6)+dimV(448,40,190,'h = ?','g',20,-1)+tx(420,215,T('1 мм рт. ст. на 12 м','12 м-ге 1 мм с.б.'),{s:15,c:'muted'}),235),
+ c:()=>SS(P('M150 20 V150',{w:3})+rc(150,20,36,170,{f:'panel',r:3,sw:3})+`<rect x="153" y="30" width="30" height="156" style="fill:var(--accent-soft)"/>`+rc(110,160,120,40,{f:'accent-soft',r:6,sw:3})+dimV(250,20,190,'1 '+T('м','м')+' '+T('воды','су'),'accent',19)+tx(420,100,'h = 10,3 '+T('м','м')+' ?',{s:24,c:'r'}),235)
+};
+SKM[22]={
+ e:()=>SS(ucols(130,160,'accent-soft','accent-soft','','')+ln(150,60,310,60,'muted',1.5,'5')+dimV(300,30,60,'0,3 '+T('м','м'),'g',19,1)+box(320,125,90,50,T('газ','газ'),{s:20})+P('M270 150 H320',{s:'fg',w:3})+tx(400,95,T('Δp = ?','Δp = ?'),{s:24,c:'r'}),225),
+ 1:()=>SS(P('M110 40 V190 H270 V40 M150 40 V150 H230 V40',{w:3.5})+`<rect x="150" y="150" width="80" height="40" style="fill:var(--muted)"/><rect x="110" y="120" width="40" height="70" style="fill:var(--muted)"/><rect x="230" y="150" width="40" height="40" style="fill:var(--muted)"/>`+dimV(290,120,150,'h = 0,05 '+T('м','м'),'g',18,1)+tx(190,215,T('ртуть','сынап'),{s:17,c:'muted'})+tx(400,100,T('Δp = ?','Δp = ?'),{s:24,c:'r'}),235),
+ 2:()=>SS(P('M160 40 V180 H280 V40',{w:3.5})+rc(160,70,120,12,{f:'panel2',r:2,sw:3})+ln(220,20,220,70,'fg',4)+rc(190,10,60,10,{f:'panel2',r:3,sw:2.5})+ar(120,120,120,70,'g',4)+ar(320,70,320,120,'r',4)+tx(100,150,T('вверх','жоғары'),{s:16,c:'g'})+tx(330,150,T('вниз','төмен'),{s:16,c:'r'})+rc(150,176,24,10,{f:'accent',r:2,sw:2})+rc(266,176,24,10,{f:'accent',r:2,sw:2})+tx(220,215,T('клапаны','клапандар'),{s:16,c:'muted'}),230),
+ 3:()=>SS(P('M140 60 q-20 0 -20 20 V170 q0 20 20 20 H220 q20 0 20 -20 V80 q0 -20 -20 -20 Z',{f:'panel2',w:3.5})+ci(350,100,60,'panel','fg')+ar(350,100,350+36*Math.cos(.7),100-36*Math.sin(.7),'r',4)+dot(350,100)+tx(350,180,'200 '+T('кПа','кПа'),{s:20,c:'accent'})+tx(180,130,T('газ','газ'),{s:22})+P('M240 100 H292',{w:3})+tx(180,215,'p абс = ?',{s:23,c:'r'})+tx(430,40,'p атм = 100',{s:16,c:'muted'}),235),
+ c:()=>SS(`<rect x="0" y="160" width="520" height="60" style="fill:#8a6a4a;opacity:.55"/>`+rc(80,30,30,190,{f:'panel',r:3,sw:3})+`<rect x="82" y="120" width="26" height="98" style="fill:var(--accent-soft)"/>`+dimV(150,50,190,'≈ 10 '+T('м','м'),'accent',20)+rc(60,10,70,22,{f:'panel2',r:3,sw:2.5})+tx(390,90,T('насос с одним клапаном','бір клапанды сорғы'),{s:17,c:'muted'})+tx(390,125,T('вода не поднимается выше?','су жоғары көтерілмей ме?'),{s:17,c:'r'}),235)
+};
+const dyno=(x,w,lab,inWater,beakerLevel=0)=>(inWater?`<rect x="${x-60}" y="125" width="120" height="85" style="fill:var(--accent-soft)"/>`+ln(x-60,125,x+60,125,'accent',3):'')+hatch(x-50,20,100)+rc(x-14,20,28,70,{f:'panel',r:6,sw:2.5})+ln(x,90,x,100,'fg',3)+box(x-28,100,56,38,'',{s:15})+tx(x,161,lab,{s:18,c:'accent'});
+SKM[23]={
+ e:()=>SS(dyno(130,0,'3 Н',false)+tx(130,205,T('в воздухе','ауада'),{s:16,c:'muted'})+dyno(340,0,'2,2 Н',true)+tx(340,222,T('в воде','суда'),{s:16,c:'muted'})+tx(450,60,'Fₐ = ?',{s:24,c:'r'}),235),
+ 1:()=>SS(dyno(130,0,'5 Н',false)+tx(130,205,T('в воздухе','ауада'),{s:16,c:'muted'})+dyno(340,0,'3,5 Н',true)+tx(340,222,T('в воде','суда'),{s:16,c:'muted'})+tx(450,60,'Fₐ = ?',{s:24,c:'r'}),235),
+ 2:()=>SS(dyno(130,0,'20 Н',false)+tx(130,205,T('в воздухе','ауада'),{s:16,c:'muted'})+dyno(340,0,'14 Н',true)+tx(340,222,T('в воде','суда'),{s:16,c:'muted'})+tx(450,60,'Fₐ = ?',{s:24,c:'r'}),235),
+ 3:()=>SS(beaker(100,30,150,100,200,10,{w:130,lab:5})+box(130,95,30,30,'Fe',{s:15})+box(190,95,30,30,'Al',{s:15})+tx(165,222,T('одинаковый объём','бірдей көлем'),{s:16,c:'muted'})+tx(380,100,'Fₐ(Fe) ≟ Fₐ(Al)',{s:21,c:'r'}),235),
+ c:()=>SS(beaker(70,50,130,100,100,10,{w:130,lab:100}).replace(/<line[^>]*\/>/g,m=>m.includes('stroke-width="1.4"')?'':m)+`<ellipse cx="135" cy="175" rx="22" ry="30" style="fill:var(--panel);stroke:var(--fg)" stroke-width="2.5"/>`+tx(135,35,T('пресная','тұщы'),{s:17,c:'accent'})+beaker(290,50,130,100,100,10,{w:130,lab:100}).replace(/<line[^>]*\/>/g,m=>m.includes('stroke-width="1.4"')?'':m)+`<ellipse cx="355" cy="95" rx="22" ry="30" style="fill:var(--panel);stroke:var(--fg)" stroke-width="2.5"/>`+tx(355,35,T('солёная','тұзды'),{s:17,c:'r'}),235)
+};
+SKM[24]={
+ e:()=>SS(beaker(120,20,160,110,200,10,{w:140,lab:100})+box(168,100,44,44,'200 '+T('см³','см³'),{s:13})+tx(380,100,'g = 10 Н/кг',{s:19,c:'muted'})+tx(380,140,'Fₐ = ?',{s:26,c:'r'}),240),
+ 1:()=>SS(P('M60 80 V170 Q60 185 75 185 H215 Q230 185 230 170 V80 L270 70',{w:3.5})+`<rect x="62" y="100" width="166" height="84" style="fill:var(--accent-soft)"/>`+box(110,120,50,50,'',{s:14})+P('M276 80 q4 18 2 40',{s:'accent',w:3})+beaker(250,130,70,35,100,10,{w:70,lab:100})+tx(285,222,'80 '+T('см³','см³'),{s:18,c:'accent'})+tx(420,110,'Fₐ = ?',{s:26,c:'r'}),235),
+ 2:()=>SS(dyno(130,0,'4,5 Н',false)+tx(130,205,T('в воздухе','ауада'),{s:16,c:'muted'})+dyno(340,0,'3,7 Н',true)+tx(340,222,T('в воде','суда'),{s:16,c:'muted'})+tx(450,60,'Fₐ, V = ?',{s:22,c:'r'}),235),
+ 3:()=>SS(beaker(60,40,140,100,200,10,{w:120,lab:100})+box(100,100,40,40,'',{s:14})+tx(120,32,T('вода','су'),{s:17,c:'accent'})+beaker(260,40,140,100,200,10,{w:120,lab:100}).replace(/var\(--accent-soft\)/g,'var(--warn-soft)')+box(300,100,40,40,'',{s:14})+tx(320,32,T('керосин','керосин'),{s:17})+tx(450,120,'Fₐ₁ : Fₐ₂ = ?',{s:20,c:'r'}).replace('x="450"','x="445"'),225),
+ c:()=>SS(dyno(130,0,'?',false)+tx(130,205,T('в воздухе','ауада'),{s:16,c:'muted'})+dyno(340,0,'?',true)+tx(340,222,T('в воде','суда'),{s:16,c:'muted'})+tx(450,60,'ρ = ?',{s:24,c:'r'}),235)
+};
+SKM[25]={
+ e:()=>SS(box(70,80,90,70,'0,3 '+T('кг','кг'),{s:19})+tx(115,170,'400 '+T('см³','см³'),{s:17,c:'accent'})+beaker(250,40,150,100,200,10,{w:140,lab:100})+tx(320,205,T('вода','су'),{s:17,c:'accent'})+tx(450,110,T('утонет?','батады ма?'),{s:22,c:'r'}),235),
+ 1:()=>SS(beaker(160,40,150,100,200,10,{w:140,lab:100})+box(200,10,60,50,'2700',{s:18}).replace('y="10"','y="25"')+ar(230,85,230,120,'fg',3)+tx(420,95,T('ρ тела = 2700','ρ дене = 2700'),{s:17,c:'accent'})+tx(420,150,T('утонет?','батады ма?'),{s:22,c:'r'}),235),
+ 2:()=>SS(beaker(110,30,160,100,200,10,{w:140,lab:100})+box(150,100,60,50,'2 '+T('кг','кг'),{s:17})+ar(180,150,180,205,'r',4)+tx(200,200,'Fт',{s:20,c:'r',a:'start'})+ar(180,100,180,45,'g',4)+tx(200,70,'Fₐ',{s:20,c:'g',a:'start'})+tx(360,100,'V = 0,004 '+T('м³','м³'),{s:20,c:'accent'})+tx(360,140,T('что произойдёт?','не болады?'),{s:20,c:'r'}),235),
+ 3:()=>SS(`<rect x="0" y="80" width="520" height="140" style="fill:var(--accent-soft)"/>`+wave(0,520,80)+P('M140 80 L190 30 L250 80 Z',{f:'panel',w:3.5})+P('M140 80 H250 L300 125 L240 195 L170 185 L120 130 Z',{f:'panel',w:3.5,s:'accent'})+tx(420,60,'ρ льда 900',{s:17,c:'muted'}).replace('ρ льда',T('ρ лёд','ρ мұз'))+tx(420,95,'ρ воды 1030',{s:17,c:'muted'}).replace('ρ воды',T('ρ су','ρ су'))+tx(420,160,T('под водой: ?','судың астында: ?'),{s:20,c:'r'}),235),
+ c:()=>SS(`<rect x="0" y="120" width="520" height="100" style="fill:var(--accent-soft)"/>`+wave(0,520,120)+P('M60 100 H210 L190 140 H80 Z',{f:'muted',w:3.5})+rc(110,70,50,30,{f:'panel2',r:3,sw:2.5})+tx(135,210,T('корабль','кеме'),{s:17,c:'g'})+rc(340,160,10,36,{f:'muted',r:2,sw:2.5})+P('M338 160 h14',{w:4})+tx(345,215,T('гвоздь','шеге'),{s:17,c:'r'}),235)
+};
+SKM[26]={
+ 1:()=>SS(forceBody(70,80,110,56,[{d:'r',len:100,t:'F = 40 Н'}],T('тело','дене'))+ground(150,20,500)+dim(70,320,200,'s = 5 '+T('м','м'),'accent',20)+tx(420,110,'A = ?',{s:26,c:'r'}),225),
+ 2:()=>SS(rc(60,180,150,16,{f:'panel2',r:3,sw:3})+ln(110,180,110,40,'fg',6)+ln(110,40,260,40,'fg',6)+ln(260,40,260,120,'fg',2)+box(235,120,50,40,'500 '+T('кг','кг'),{s:13})+dimV(310,40,160,'10 '+T('м','м'),'accent',19)+clock(430,100,36,'',50)+tx(430,160,'t = 20 '+T('с','с'),{s:19,c:'accent'})+tx(430,195,'A, N = ?',{s:22,c:'r'}),230),
+ 3:()=>SS(rc(70,70,150,90,{f:'panel2',r:10,sw:3})+tx(145,125,'3 '+T('кВт','кВт'),{s:30,c:'accent'})+ci(270,115,26,'panel','fg')+ln(246,115,296,115,'fg',3)+clock(400,100,38,'',60)+tx(400,160,'t = 2 '+T('мин','мин'),{s:21,c:'accent'})+tx(260,205,'A = ?',{s:26,c:'r'}),225)
+};
+
+/* lessons 27-34 */
+const lever=(x1,x2,piv,L,R,lab)=>ln(x1,130,x2,130,'fg',8)+P(`M${piv-24} 190 L${piv+24} 190 L${piv} 133 Z`,{f:'panel2',w:3})+L+R+(lab||'');
+const hang=(x,w,t,len=40)=>ln(x,130,x,130+len,'fg',2.5)+box(x-24,130+len,48,34,t,{s:16});
+SKM[27]={
+ e:()=>SS(ground(160)+box(60,100,90,60,'4 '+T('кг','кг'),{s:20})+ar(150,130,290,130,'g',5)+tx(220,112,'v = 5 '+T('м/с','м/с'),{s:21,c:'g'})+tx(400,125,'Eк = ?',{s:26,c:'r'}),215),
+ 1:()=>SS(ground(190)+rc(60,100,160,10,{f:'panel2',r:2,sw:3})+box(100,60,60,40,'5 '+T('кг','кг'),{s:17})+dimV(250,100,190,'h = 3 '+T('м','м'),'accent',20)+tx(400,125,'Eп = ?',{s:26,c:'r'}),215),
+ 2:()=>SS(ground(150)+P('M60 130 H190 L210 120 L190 110 H60 Z',{f:'warn-soft',w:3})+ar(215,120,330,120,'g',5)+tx(280,100,'v = 400 '+T('м/с','м/с'),{s:20,c:'g'})+tx(150,95,'m = 10 '+T('г','г'),{s:19,c:'accent'})+tx(420,125,'Eк = ?',{s:26,c:'r'}),215),
+ 3:()=>SS(ground(150)+car(40,150,'accent',.8)+ar(105,100,175,100,'g',4)+tx(140,85,'10 '+T('м/с','м/с'),{s:18,c:'g'})+car(260,150,'y',.8)+ar(325,100,445,100,'g',4)+tx(385,85,'30 '+T('м/с','м/с'),{s:18,c:'g'})+tx(240,205,'Eк₂ : Eк₁ = ?',{s:24,c:'r'}),215),
+ c:()=>SS(ground(190,10,250)+rc(70,100,100,10,{f:'panel2',r:2,sw:3})+ci(120,75,22,'muted','fg')+tx(120,95,'2',{s:16,c:'accent-fg'})+dimV(200,100,190,'10 '+T('м','м'),'accent',17)+ground(190,270,510)+ci(300,160,16,'accent','fg')+ar(320,160,440,160,'g',4)+tx(380,142,'v = 20',{s:18,c:'g'})+tx(300,200,'0,5 '+T('кг','кг'),{s:15,c:'muted'}).replace('y="200"','y="215"')+tx(380,60,'Eп ≟ Eк ?',{s:22,c:'r'}),225)
+};
+SKM[28]={
+ e:()=>SS(rc(60,25,80,14,{f:'panel2',r:2,sw:3})+ln(100,38,100,190,'muted',2,'6')+ci(100,55,14,'muted','fg')+ar(100,80,100,140,'r',5)+dimV(170,38,190,'h = 20 '+T('м','м'),'accent',20)+ground(190,40,500)+tx(400,100,'v = ?',{s:26,c:'r'}),225),
+ 1:()=>SS([[90,T('маятник','маятник'),P('M90 30 L50 130',{w:2.5})+ci(50,130,14,'accent','fg')+P('M90 30 L130 130',{w:2.5,d:'4'})+ci(130,130,14,'accent-soft','fg')],[260,T('плотина → турбина','бөгет → турбина'),`<rect x="215" y="60" width="90" height="90" style="fill:var(--accent-soft);stroke:var(--fg)" stroke-width="2.5"/>`+ar(260,70,260,130,'r',3)+ci(260,160,18,'panel','fg')],[430,T('мяч','доп'),ci(430,50,14,'accent','fg')+ar(430,70,430,120,'r',3)+ground(140,390,470)+ci(430,170,14,'accent-soft','fg')]].map(([x,t,s])=>s+tx(x,215,t,{s:16,c:'muted'})).join(''),225),
+ 2:()=>SS(ground(190,40,500)+ci(150,170,14,'accent','fg')+ar(150,150,150,70,'g',5)+tx(175,120,'v₀ = 10 '+T('м/с','м/с'),{s:21,c:'g',a:'start'})+ln(150,40,150,40)+dimV(300,45,190,'h = ?','accent',24)+ln(150,45,260,45,'muted',1.5,'5')+ci(150,45,6,'r','r'),225),
+ 3:()=>SS(rc(60,25,80,12,{f:'panel2',r:2,sw:3})+ci(100,50,13,'muted','fg')+dimV(180,37,190,'10 '+T('м','м'),'accent',19)+ln(100,126,260,126,'muted',1.5,'5')+ci(100,126,13,'accent','fg')+dimV(240,126,190,'4 '+T('м','м'),'g',19)+ground(190,40,500)+tx(380,100,'m = 1 '+T('кг','кг'),{s:20,c:'accent'})+tx(380,145,'Eк = ?  v = ?',{s:22,c:'r'}),225),
+ c:()=>SS(ln(120,30,300,30,'fg',5)+ln(210,30,150,160,'fg',2.5)+ci(150,160,14,'accent','fg')+ln(210,30,270,160,'muted',1.5,'4')+arc(210,30,135,255,285,{s:'muted',d:'4'})+arc(210,30,125,250,290,{s:'accent'})+arc(210,30,115,245,295,{s:'g'})+tx(210,215,T('размах уменьшается','тербеліс азаяды'),{s:18,c:'r'})+tx(390,110,'E ≟ const ?',{s:22,c:'r'}),225)
+};
+SKM[29]={
+ e:()=>SS(ci(380,115,26,'panel2','fg')+rc(120,100,260,30,{f:'accent-soft',r:15,sw:3})+ci(380,115,8,'fg')+ar(140,120,140,40,'r',5)+tx(190,55,'F = 30 Н',{s:21,c:'r',a:'start'})+dim(140,380,175,'l = 0,2 '+T('м','м'),'accent',20)+tx(250,215,'M = ?',{s:24,c:'r'}),225),
+ 1:()=>SS([[90,T('рычаг','тетік'),ln(30,150,150,110,'fg',6)+P('M80 160 L110 160 L95 130 Z',{f:'panel2',w:2.5})],[260,T('блок','блок'),ci(260,90,32,'panel','fg')+ci(260,90,5,'fg')+ln(228,90,228,170,'fg',2.5)+ln(292,90,292,140,'fg',2.5)+box(278,140,28,28,'',{s:12})],[430,T('наклонная плоскость','көлбеу жазықтық'),P('M370 170 L490 170 L490 110 Z',{f:'panel2',w:3})+box(430,110,26,24,'',{s:10})]].map(([x,t,s])=>s+tx(x,205,t,{s:16,c:'muted'})).join(''),225),
+ 2:()=>SS(rc(60,95,50,50,{f:'panel',r:3,sw:3})+rc(110,110,260,20,{f:'accent-soft',r:3,sw:3})+ci(60,120,10,'fg')+ar(340,200,340,140,'r',5)+dim(60,340,70,'l = 0,3 '+T('м','м'),'accent',20)+tx(400,170,'F = ?',{s:26,c:'r'})+tx(260,215,'M = 12 Н·м',{s:20,c:'accent'}),225),
+ 3:()=>SS(lever(40,480,130,hang(70,0,'600 Н'),ar(440,200,440,140,'r',4)+tx(410,190,'150 Н',{s:20,c:'r',a:'end'}))+dim(70,130,92,'↑ 0,5 '+T('м','м'),'g',16)+tx(440,100,'s = ?',{s:22,c:'r'})+tx(250,222,T('золотое правило выполняется?','алтын ереже орындала ма?'),{s:17,c:'muted'}),235),
+ c:()=>SS(rc(40,40,10,120,{f:'fg',r:2,sw:0})+P('M50 50 L300 130',{w:3,s:'muted',d:'6'})+rc(50,60,260,10,{f:'panel2',r:2,sw:3}).replace('y="60"','y="100"')+box(280,98,16,14,'',{s:5})+ar(290,140,290,185,'r',5)+ar(100,140,100,185,'r',2.5)+tx(310,172,'F',{s:20,c:'r',a:'start'})+tx(400,110,T('ручка далеко','тұтқа алыс'),{s:19,c:'accent'})+tx(400,150,T('петли','топсалар'),{s:16,c:'muted'}),225)
+};
+SKM[30]={
+ e:()=>SS(rc(120,40,260,130,{f:'panel',r:2,sw:3})+ln(120,40,380,170,'muted',2,'6')+ln(380,40,120,170,'muted',2,'6')+ci(250,105,8,'r','r')+tx(285,100,T('центр масс','масса центрі'),{s:17,c:'r',a:'start'}).replace('x="285"','x="270"').replace('y="100"','y="95"'),215),
+ 1:()=>SS(rc(60,100,400,24,{f:'warn-soft',r:3,sw:3})+Array.from({length:31},(_,i)=>ln(60+i*400/30,100,60+i*400/30,100+(i%5===0?12:7),'fg',1.2)).join('')+P('M260 190 L240 140 L280 140 Z',{f:'panel2',w:3})+ln(260,140,260,124,'fg',3)+tx(60,95,'0',{s:15,c:'muted'})+tx(460,95,'30 '+T('см','см'),{s:15,c:'muted'})+tx(260,215,T('где подпереть?','қайда тіреу керек?'),{s:20,c:'r'}),225),
+ 2:()=>SS(P('M180 40 L260 190 L100 190 Z',{f:'panel',w:3.5})+ln(180,40,180,10,'fg',3)+P('M160 40 V190 M200 40 V190 M180 40 V190',{s:'muted',w:1.5,d:'5'})+ci(180,40,5,'fg')+ln(130,60,130,185,'accent',2)+ln(200,60,205,185,'g',2)+ln(170,60,165,185,'r',2)+tx(400,100,T('линии отвеса','тіктеу сызықтары'),{s:17,c:'muted'})+tx(400,140,T('пересеклись не в одной точке','бір нүктеде қиылыспады'),{s:15,c:'r'}),225),
+ 3:()=>SS(ground(180,10,250)+P('M70 180 H190 L130 70 Z',{f:'accent-soft',w:3.5})+ci(130,135,6,'r','r')+ln(130,135,130,180,'r',2,'4')+tx(130,205,T('низкий ц. м. — устойчиво','төмен м. о. — тұрақты'),{s:15,c:'g'})+ground(180,270,510)+P('M360 180 H400 L380 40 Z',{f:'panel2',w:3.5})+ci(380,80,6,'r','r')+ln(380,80,380,180,'r',2,'4')+tx(380,205,T('высокий — неустойчиво','жоғары — тұрақсыз'),{s:15,c:'r'}),225),
+ c:()=>SS(ground(190,60,460)+P('M230 190 L250 30 L290 38 L275 190 Z',{f:'panel2',w:3.5})+ln(265,24,265,24)+ci(262,100,6,'r','r')+ln(262,100,262,190,'r',2,'4')+ln(225,190,285,190,'accent',4)+tx(380,100,T('вертикаль из ц. м.','ц. м. вертикалі'),{s:17,c:'r'})+tx(380,140,T('внутри основания?','табан ішінде ме?'),{s:17,c:'g'}),225)
+};
+SKM[31]={
+ e:()=>SS(lever(40,480,150,hang(70,0,'50 Н'),ar(430,200,430,140,'r',4)+tx(400,190,'F = ?',{s:21,c:'r',a:'end'}))+dim(70,150,92,'0,4 '+T('м','м'),'accent',17)+dim(150,430,92,'1 '+T('м','м'),'g',17),230),
+ 1:()=>SS(lever(40,480,250,hang(110,0,'20 Н'),hang(430,0,'25 Н'))+dim(110,250,92,'0,5 '+T('м','м'),'accent',17)+dim(250,430,92,'l₂ = ?','r',17),230),
+ 2:()=>SS(lever(40,480,160,hang(80,0,'360 Н',40),ar(440,200,440,140,'r',4)+tx(410,190,'F = ?',{s:20,c:'r',a:'end'}))+dim(80,160,92,'0,2 '+T('м','м'),'accent',17)+dim(160,440,92,'1,2 '+T('м','м'),'g',17),230),
+ 3:()=>SS(lever(40,480,250,hang(90,0,'30 Н'),hang(410,0,'10 Н'))+dim(40,480,60,'2 '+T('м','м'),'accent',19)+tx(250,215,'l₁ = ?  l₂ = ?',{s:21,c:'r'}),230),
+ c:()=>SS(lever(40,480,150,hang(80,0,'500 Н'),ar(430,200,430,140,'r',4)+tx(400,185,'50 Н',{s:20,c:'r',a:'end'}))+tx(250,50,'l₂ : l₁ = ?',{s:24,c:'r'}),230)
+};
+SKM[32]={
+ e:()=>SS(lever(40,480,250,hang(150,0,'2 Н'),hang(350,0,'1 Н'))+tx(150,110,'l₁ = 0,1 '+T('м','м'),{s:17,c:'accent'})+tx(350,110,'l₂ = 0,2 '+T('м','м'),{s:17,c:'g'})+tx(250,60,'M₁ ≟ M₂',{s:22,c:'r'}),230),
+ 1:()=>SS(`<rect x="100" y="${190-0.40*300}" width="110" height="${0.40*300}" style="fill:var(--accent-soft);stroke:var(--accent)" stroke-width="3"/><rect x="290" y="${190-0.38*300}" width="110" height="${0.38*300}" style="fill:var(--warn-soft);stroke:var(--fg)" stroke-width="3"/>`+ln(70,190,450,190,'fg',3)+tx(155,175,'M₁ = 0,40',{s:20,c:'accent'})+tx(345,175,'M₂ = 0,38',{s:20})+tx(250,40,'δ = ?  %',{s:26,c:'r'}),215),
+ 2:()=>SS(lever(40,480,250,hang(115,0,'1 Н').replace('<rect','<rect')+hang(165,0,'1 Н',40)+hang(75,0,'1 Н',40),hang(330,0,'1 Н')+hang(390,0,'1 Н'))+dim(115,250,92,'0,15 '+T('м','м'),'accent',17)+dim(250,360,92,'l₂ = ?','r',17),230),
+ 3:()=>SS(P('M40 125 L480 140',{w:8})+P('M230 190 L270 190 L250 138 Z',{f:'panel2',w:3})+tx(120,95,T('трение в оси','осьтегі үйкеліс'),{s:17,c:'r'})+tx(380,100,T('рычаг не горизонтален?','тетік көлденең емес?'),{s:17,c:'r'})+tx(250,215,T('две причины','екі себеп'),{s:18,c:'muted'}),225),
+ c:()=>SS(lever(40,480,250,hang(110,0,'m = ?'),hang(390,0,'1 Н',40))+tx(250,60,T('определить массу тела','дене массасын анықта'),{s:19,c:'r'}),230)
+};
+const barsAZ=(a,z,la,lz)=>`<rect x="110" y="${190-a}" width="110" height="${a}" style="fill:var(--accent-soft);stroke:var(--accent)" stroke-width="3"/><rect x="300" y="${190-z}" width="110" height="${z}" style="fill:var(--warn-soft);stroke:var(--fg)" stroke-width="3"/>`+ln(70,190,450,190,'fg',3)+tx(165,190-a-10,la,{s:19,c:'accent'})+tx(355,190-z-10,lz,{s:19})+tx(165,212,T('полезная','пайдалы'),{s:16,c:'muted'})+tx(355,212,T('затраченная','жұмсалған'),{s:16,c:'muted'});
+SKM[33]={
+ e:()=>SS(barsAZ(40,100,'Aп = 2 '+T('Дж','Дж'),'Aз = 5 '+T('Дж','Дж'))+tx(470,100,'η = ?',{s:24,c:'r'}).replace('x="470"','x="470"'),235),
+ 1:()=>SS(P('M40 190 L460 190 L460 150 Z',{f:'panel2',w:3.5}).replace('L460 150','L440 190 L440 130')+P('M40 190 L440 190 L440 130 Z',{f:'panel2',w:3.5})+box(180,128,40,34,'4 Н',{s:15}).replace('y="128"','y="140"')+dimV(470,130,190,'h = 0,2 '+T('м','м'),'accent',17,-1)+dim(40,440,215,'l = 1 '+T('м','м'),'g',17)+ar(260,150,330,128,'r',4)+tx(240,125,'F = 1,25 Н',{s:18,c:'r'})+tx(100,100,'η = ?',{s:24,c:'r'}),235),
+ 2:()=>SS(rc(60,60,150,100,{f:'panel2',r:10,sw:3})+tx(135,118,T('двигатель','қозғалтқыш'),{s:19})+ar(210,100,310,100,'g',5)+tx(300,75,T('300 Дж полезно','300 Дж пайдалы'),{s:15,c:'g'})+ar(135,60,135,20,'r',3).replace('y1="60"','y1="55"')+ar(210,140,310,170,'r',3)+tx(380,185,T('потери ?','шығын ?'),{s:19,c:'r'})+tx(135,205,'500 '+T('Дж','Дж')+' '+T('затрачено','жұмсалды'),{s:17,c:'accent'}),235),
+ 3:()=>SS(barsAZ(80,100,'Aп = 160 '+T('Дж','Дж'),'Aз = ?')+tx(450,100,'η = 80 %',{s:22,c:'accent'}).replace('x="450"','x="445"'),235),
+ c:()=>SS(P('M40 190 L460 190 L460 100 Z',{f:'panel2',w:3.5})+box(220,130,40,34,'',{s:12}).replace('y="130"','y="140"')+tx(120,110,T('меньше трение →','үйкеліс аз →'),{s:18,c:'g'})+tx(120,140,T('больше КПД ?','ПӘК артады ма?'),{s:18,c:'r'})+ar(320,160,390,135,'r',3),235)
+};
+const planet=(x,y,r,c)=>ci(x,y,r,c,'fg');
+SKM[34]={
+ e:()=>SS(ci(120,110,10,'y','fg')+ci(120,110,0)+ci(120,110,45,'none','muted').replace('fill:var(--none)','fill:none')+ci(120,65,8,'accent','fg')+tx(120,195,T('геоцентрическая','геоцентрлік'),{s:16})+tx(120,215,T('Земля в центре','Жер ортада'),{s:14,c:'muted'})+ci(380,110,12,'y','fg')+ci(380,110,45,'none','muted').replace('fill:var(--none)','fill:none')+ci(425,110,8,'accent','fg')+tx(380,195,T('гелиоцентрическая','гелиоцентрлік'),{s:16})+tx(380,215,T('Солнце в центре','Күн ортада'),{s:14,c:'muted'}),225),
+ 1:()=>SS(ci(40,110,26,'y','fg')+[[100,5,'muted'],[130,8,'warn-soft'],[165,9,'accent'],[200,6,'r'],[260,18,'warn-soft'],[330,15,'y'],[395,11,'accent-soft'],[455,11,'accent']].map(([x,r,c],i)=>ci(x,110,r,c,'fg')+tx(x,150+(i%2)*22,i+1,{s:16,c:'muted'})).join('')+tx(260,205,T('порядок от Солнца?','Күннен ретімен?'),{s:20,c:'r'}),225),
+ 2:()=>SS(ci(80,110,30,'y','fg')+ci(260,60,26,'accent-soft','fg')+ln(260,20,260,100,'muted',2,'4')+P('M246 35 L274 85',{w:3.5,s:'accent'})+tx(260,125,T('лето','жаз'),{s:17,c:'g'})+ci(260,175,26,'accent-soft','fg')+P('M247 150 L273 200',{w:3.5,s:'accent'}).replace('M247 150 L273 200','M250 150 L270 200')+tx(330,170,T('зима','қыс'),{s:17,c:'r'})+tx(400,100,T('ось наклонена','ось көлбеу'),{s:17,c:'accent'}),235),
+ 3:()=>SS(ci(260,110,16,'y','fg')+ci(260,110,85,'none','muted').replace('fill:var(--none)','fill:none')+ci(345,110,10,'accent','fg')+tx(345,92,T('365 суток','365 тәулік'),{s:17,c:'accent'})+ci(260,25,0)+tx(260,215,'+ 1 / 4 '+T('суток','тәулік')+' → '+T('високосный год','кібісе жыл'),{s:17,c:'r'})+tx(110,110,T('месяц ≈ 30 суток','ай ≈ 30 тәулік'),{s:15,c:'muted'}),235),
+ c:()=>SS(P('M60 170 A200 200 0 0 1 460 170',{w:3,s:'muted'})+ln(40,170,480,170,'fg',3)+ci(260,60,20,'y','fg')+ci(260,60,32,'none','y').replace('fill:var(--none)','fill:none')+tx(260,110,T('Солнце не заходит','Күн батпайды'),{s:19,c:'g'})+tx(260,200,T('горизонт','көкжиек'),{s:16,c:'muted'}),225)
+};
+
+window.__sk=sk;
+function sor0(l){return !!l.sor}
+function slideList(l){const u=U(),M=DATA[st.lang].meta,gr=GR[l.n]||{},sch=schemeOf(l.n),fm=fmOf(l.n),lab=l.kind==='lab'||l.kind==='labsor',B=l.B;
+  const out=[],add=(s,tt,cls,html)=>out.push({st:s,tt,cls,html});
+  const qn=l.q+' '+u.quarter;
+  /* 1 stage: organisation */
+  add(0,T('Тема урока','Сабақ тақырыбы'),'hero',`<div class="sd-hero"><div class="sdn">${l.n}</div><div class="hb"><div class="kicker">${esc(T('Физика · 7 класс · ','Физика · 7-сынып · ')+qn)}</div><div class="h">${fmt(l.topic)}</div><div class="meta">${esc(l.sec)}${l.sor?' · '+esc(u.sorTag(l.sn)):''}${lab?' · '+esc(u.lab):''}</div></div></div><div class="sd-foot">${esc(M.teacher)} · ${esc(M.cls)} · ${esc(M.org)}</div>`);
+  add(0,T('Цели','Мақсаттар'),'c12',bcard('',u.goal,`<div class="mid">${fmt(M.goalPre+l.smart+M.goalPost)}</div>`)
+     +bcard('',u.goals,'<ul class="pl">'+l.goals.map(g=>`<li><b>${esc(g[0])}</b> – ${fmt(g[1])}</li>`).join('')+'</ul>'));
+  add(0,T('Критерии успеха','Табыс критерийлері'),'c'+Math.min(3,l.crit.length),l.crit.map((c,ci)=>bcard('',(ci+1)+'. '+c.t.replace(/\s*\(.*?\)\s*/g,' ').trim(),'<ul class="pl">'+c.d.map(d=>`<li>${fmt(d)}</li>`).join('')+'</ul>')).join(''));
+  /* 2 stage: motivation */
+  const vis=gr.hook?figs(gr.hook):(sch||'');
+  add(1,u.problem,vis?'c12':'c1',bcard('',u.problem,`<div class="big">${fmt(l.problem)}</div>`)+(vis?bcard('',T('Рассмотрите','Қараңдар'),vis,'schc'):''));
+  add(1,T('Диагностика и гипотеза','Диагностика және гипотеза'),'c2',bcard('',u.diag,ol(l.d.map(x=>x.charAt(0).toUpperCase()+x.slice(1)+'?')).replace('class="steps"','class="steps mid"'))
+     +bcard('',u.hyp,`<div class="big">${esc(u.hypT)}</div>`));
+  /* 3 stage: new knowledge */
+  const terms=((l.kw||'').match(/«([^»]+)»/g)||[]).map(x=>x.slice(1,-1));
+  const ts=topicShort(l.topic);
+  if(terms.length)add(2,T('Ключевые понятия','Негізгі ұғымдар'),'c1',bcard('',ts,'<div class="terms">'+terms.map(x=>`<span>${esc(x)}</span>`).join('')+'</div>'));
+  add(2,T('Карта темы','Тақырып картасы'),'map',bcard('',ts,cluster(l),'schc'));
+  if(fm.length||sch)add(2,fm.length?T('Формулы и величины','Формулалар мен шамалар'):T('Схема, рисунок','Сызба, сурет'),fm.length&&sch?'c2':'c1',
+     (fm.length?bcard('',T('Опорные формулы','Тірек формулалар'),'<div class="fml">'+fm.map(f=>`<div>${esc(f)}</div>`).join('')+'</div>'):'')+(sch?bcard('',T('Схема, рисунок','Сызба, сурет'),sch,'schc'):''));
+  add(2,T('Заполни пропуски','Бос орындарды толтыр'),'c1',bcard('',ts,'<div class="mid"><ol class="steps">'+l.A.map(a=>'<li value="'+(parseInt(a)||'')+'">'+fmt(a.replace(/^\d+\.\s*/,''))+'</li>').join('')+'</ol></div>'));
+  const filled=l.A.map((a,i)=>{const k=(l.Akey[i]||'').replace(/^\d+\.\s*/,'').replace(/\.\s*$/,'').split(/;\s*/);let j=0;return a.replace(/^\d+\.\s*/,'').replace(/_{2,}/g,()=>'**'+(k[j++]||'')+'**')});
+  add(2,T('Запомним','Есте сақтаймыз'),'c1',bcard('',ts,'<div class="mid"><ul class="pl nk">'+filled.map(x=>'<li>'+fmt(x)+'</li>').join('')+'</ul></div>'));
+  if(l.ex&&!sor0(l))add(2,u.sample,'c1',bcard('',u.sample,`<div class="task"><div class="q">${fmt(l.ex.q)}</div>${sk(l.n,'e')}`+reveal('rvEx',u.solution,fmt(l.ex.sol)+'<br><b>'+esc(u.answer)+':</b> '+fmt(l.ex.a))+'</div>'));
+  /* 4 stage: group work */
+  add(3,u.work,(B.head?'c12':'c1')+' dn'+(B.safety?' sf':''),(B.safety?`<div class="safety" style="grid-column:1/-1;margin:0"><b>${esc(u.safe)}:</b> ${fmt(B.safety)}</div>`:'')
+     +bcard('',u.work,`<div class="mid"><b>${fmt(B.title)}</b>${B.equip?`<p><b>${esc(u.equip)}:</b> ${fmt(B.equip)}</p>`:''}<p><b>${esc(u.steps)}:</b></p>${ol(B.steps)}</div>`)
+     +(B.head?bcard('','',tableHtml(B.head,B.rows)+figs(gr.B)+`<p class="hint" style="margin:8px 0 0">${esc(u.frame)}:</p><div class="mid">${fmt(B.frame)}</div>`):''));
+  add(3,u.concl,'c1',bcard('',u.concl,`<div class="mid">${fmt(B.frame)}</div>`+reveal('rvB',u.showA,fmt(l.keyB)+figs(gr.Bkey))));
+  /* 5 stage: tasks */
+  const sor=l.sor,lv=[u.lvl1,u.lvl2,u.lvl3];
+  l.tasks.forEach((t,k)=>add(4,(sor?u.item:u.task)+' '+(k+1),'c1',bcard('',(sor?u.item:u.task)+' '+(k+1),`<div class="task"><div class="row"><span class="lv">${k+1}</span><span class="tag">${sor?esc(u.noHint):esc(lv[k])}</span></div><div class="q">${fmt(t.q)}</div>${(gr.t&&gr.t[k]||{}).q?'':sk(l.n,k+1)}${figs((gr.t&&gr.t[k]||{}).q)}`
+     +(t.hint&&!sor?reveal('rvH'+k,u.hints,fmt(t.hint)):'')+reveal('rvS'+k,u.showA,fmt(t.sol)+'<br><b>'+esc(u.answer)+':</b> '+fmt(t.a)+figs((gr.t&&gr.t[k]||{}).sol))+'</div>')));
+  if(l.ch&&!sor)add(4,u.challenge,'c1',bcard('',u.challenge,`<div class="task"><div class="q">${fmt(l.ch.q)}</div>${sk(l.n,'c')}`+reveal('rvC',u.showA,fmt(l.ch.ans))+'</div>'));
+  /* 6 stage: summary */
+  if(l.real)add(5,T('Где это применяется','Қайда қолданылады'),'c1',bcard('',ts,`<div class="mid">${fmt(l.real)}</div>`));
+  add(5,u.problem,'c1',bcard('',u.problem,`<div class="big">${fmt(l.problem)}</div>`+reveal('rvP',u.ansProb,fmt(l.ansProb))));
+  add(5,u.concl+' · '+u.reflect,'c2',bcard('',u.concl,`<div class="mid">${fmt(l.concl)}</div>`)+bcard('',u.reflect,ol(u.refQ).replace('class="steps"','class="steps mid"')));
+  add(5,u.hw,'c1',bcard('',u.hw,`<div class="mid">${fmt(l.hw)}</div>`));
+  return out}
+function slideHtml(){const l=L(),u=U(),list=slideList(l);st.slide=Math.max(0,Math.min(list.length-1,st.slide|0));const s=list[st.slide];
+  const head=`<div class="sdh"><span class="bn">${s.st+1}</span><b>${esc(stageTitle(s.st))}</b><span class="tt">${esc(s.tt)}</span></div>`;
+  const body=s.cls==='hero'?`<div class="sd hero">${s.html}</div>`:`<div class="slide sd ${s.cls}">${s.html}</div>`;
+  const dots=list.map((x,k)=>`<button data-slide="${k}" class="${k===st.slide?'on':k<st.slide?'pass':''}" aria-label="${k+1}"></button>`).join('');
+  const nav=`<div class="sd-nav"><button class="btn" data-sl="-1" ${st.slide===0?'disabled':''}>← ${esc(u.prev)}</button><div class="sd-dots">${dots}</div><span class="sd-n">${st.slide+1} / ${list.length}</span><button class="btn pri" data-sl="1" ${st.slide===list.length-1?'disabled':''}>${esc(u.next)} →</button></div>`;
+  return head+body+nav}
+function goSlide(k){const list=slideList(L());k=Math.max(0,Math.min(list.length-1,k));const s=list[k],ch=s.st!==st.stage;st.slide=k;st.stage=s.st;renderRail();renderStage();if(ch)tmSet(stageMin()*60)}
+function slideFirstOf(i){const list=slideList(L());const k=list.findIndex(x=>x.st===i);return k<0?0:k}
+
+function renderStage(keepScroll){const el=$('stage');const sc=el.scrollTop;el.innerHTML=st.slides?slideHtml():st.board?boardHtml(st.stage):stageHtml(st.stage);el.scrollTop=keepScroll?sc:0}
+function setStage(i,resetTimer){if(st.slides){goSlide(slideFirstOf(Math.max(0,Math.min(5,i))));return}st.stage=Math.max(0,Math.min(5,i));renderRail();renderStage();if(resetTimer!==false)tmSet(stageMin()*60);}
 function setLesson(n){st.lesson=n;S.set('lesson',n);renderTop();setStage(0);}
 /* ---------- sheets ---------- */
 function openSheet(id){$(id).classList.add('open');$('scrim').hidden=false}
@@ -681,7 +1069,9 @@ cv.addEventListener('pointermove',e=>{if(!pen.cur)return;(e.getCoalescedEvents?e
 addEventListener('resize',sizeInk);
 /* ---------- events ---------- */
 document.addEventListener('click',e=>{const t=e.target.closest('button,a,input,[data-rev]');if(!t)return;const d=t.dataset;
-  if(d.stage!==undefined){setStage(+d.stage)}
+  if(d.sl){goSlide(st.slide+(+d.sl))}
+  else if(d.slide!==undefined){goSlide(+d.slide)}
+  else if(d.stage!==undefined){setStage(+d.stage)}
   else if(d.go){setStage(st.stage+(+d.go))}
   else if(d.lesson){closeSheets();setLesson(+d.lesson)}
   else if(d.tool){if($('shTool').classList.contains('open')&&$('shTool').dataset.tool===d.tool){closeSheets()}else{closeSheets();openTool(d.tool)}}
@@ -710,12 +1100,14 @@ $('projX').innerHTML=ic('x');$('projX').onclick=()=>{$('proj').hidden=true};
 $('lgRu').onclick=()=>{setLang('ru')};$('lgKk').onclick=()=>{setLang('kk')};
 function setLang(l){if(l===st.lang)return;st.lang=l;S.set('lang',l);closeSheets();renderTop();renderRail();renderDock();renderStage(true);tmSet(stageMin()*60);if(pen.on)penBar()}
 $('btnTheme').onclick=()=>{st.theme=effTheme()==='dark'?'light':'dark';S.set('theme',st.theme);applyTheme();redraw()};
-$('btnBoard').onclick=()=>{st.board=!st.board;renderTop();renderStage()};
+$('btnBoard').onclick=()=>{st.board=!st.board;if(st.board&&st.slides)st.slides=false;renderTop();renderStage()};
+$('btnSlides').onclick=()=>{st.slides=!st.slides;if(st.slides){st.board=false;renderTop();goSlide(slideFirstOf(st.stage))}else{renderTop();renderStage()}};
 $('btnFull').onclick=async()=>{try{if(document.fullscreenElement)await document.exitFullscreen();else await document.documentElement.requestFullscreen()}catch(e){toast('⤢ n/a')}};
 $('tGo').onclick=tmToggle;$('tReset').onclick=()=>tmSet(stageMin()*60);
 $('tPlus').onclick=()=>{tm.left+=60;tm.total+=60;tmDraw()};$('tMinus').onclick=()=>{tm.left=Math.max(0,tm.left-60);tmDraw()};
 document.addEventListener('keydown',e=>{if(/INPUT|TEXTAREA|SELECT/.test((e.target.tagName||'')))return;
-  if(e.key==='ArrowRight')setStage(st.stage+1);else if(e.key==='ArrowLeft')setStage(st.stage-1);else if(e.key==='Escape'){$('proj').hidden=true;closeSheets()}else if(e.key===' '&&e.target===document.body){e.preventDefault();tmToggle()}});
+  if(st.slides&&/^(ArrowRight|ArrowDown|PageDown)$/.test(e.key)){e.preventDefault();goSlide(st.slide+1)}else if(st.slides&&/^(ArrowLeft|ArrowUp|PageUp)$/.test(e.key)){e.preventDefault();goSlide(st.slide-1)}else if(st.slides&&e.key==='Home')goSlide(0);else if(st.slides&&e.key==='End')goSlide(999);
+  else if(e.key==='ArrowRight')setStage(st.stage+1);else if(e.key==='ArrowLeft')setStage(st.stage-1);else if(e.key==='Escape'){$('proj').hidden=true;closeSheets()}else if(e.key===' '&&e.target===document.body){e.preventDefault();tmToggle()}});
 matchMedia('(prefers-color-scheme: dark)').addEventListener('change',()=>{redraw()});
 /* ---------- boot ---------- */
 if(!(st.lesson>=1&&st.lesson<=34))st.lesson=1;
